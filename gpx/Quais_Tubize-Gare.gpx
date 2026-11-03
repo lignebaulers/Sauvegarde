@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Guidage lignes TEC" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net">
+<metadata><name>Quais_Tubize-Gare</name><desc>Quais de Tubize Gare d'après les données TEC (horaires en vigueur). Position des repères à ±20 m : le numéro affiché sur le quai fait foi.</desc></metadata>
+<wpt lat="50.692465" lon="4.206699"><name>Quai 1 : 472</name><desc>Départs : 472 → Enghien/Edingen SNCB/Station / Marcq/Mark Bassin de Natation/Zwembad
+Arrivées : 472 ← Enghien/Edingen SNCB/Station / Marcq/Mark Bassin de Natation/Zwembad
+Passages : 472 → Enghien/Edingen SNCB/Station / Marcq/Mark Bassin de Natation/Zwembad / Tubize Bloc Scolaire</desc><type>Quais Tubize Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.692265" lon="4.206594"><name>Quai 2 : 47 · 116</name><desc>Départs : 47 → Fauquez Portique ; 116 → Halle Don Bosco / Halle Station - Perron 8
+Arrivées : 47 ← Fauquez Portique ; 116 ← Braine-le-Comte Gare / Quenast Cité Germinal / Rebecq Gare / Soignies Gare
+Passages : 47 → Fauquez Portique / Tubize Bloc Scolaire ; 116 → Halle Station - Perron 8</desc><type>Quais Tubize Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.692054" lon="4.206493"><name>Quai 3 : 116</name><desc>Départs : 116 → Braine-le-Comte Gare / Rebecq Gare / Soignies Gare
+Arrivées : 116 ← Halle Station - Perron 8
+Passages : 116 → Rebecq Gare</desc><type>Quais Tubize Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.692093" lon="4.206456"><name>Quai 4 : E2</name><desc>Départs : E2 → Nivelles Gare
+Arrivées : E2 ← Nivelles Gare</desc><type>Quais Tubize Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.692313" lon="4.206567"><name>Quai 5 : 43 · 62 · E9</name><desc>Départs : 43 → Fauquez Portique / Ittre Prison ; 62 → Nivelles Gare ; E9 → Braine-l'Alleud Gare
+Arrivées : 43 ← Fauquez Portique / Ittre Prison ; 62 ← Nivelles Gare ; E9 ← Braine-l'Alleud Gare
+Passages : 43 → Fauquez Portique / Tubize Bloc Scolaire</desc><type>Quais Tubize Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.692501" lon="4.206661"><name>Quai 6 : 115</name><desc>Départs : 115 → Braine-l'Alleud Collège - Gare Ab / Braine-l'Alleud Gare
+Arrivées : 115 ← Braine-l'Alleud Collège - Gare Ab / Braine-l'Alleud Gare / Clabecq Rue du Château
+Passages : 115 → Braine-l'Alleud Gare / Braine-le-Chateau Quatre Bras (Rue Libération) / Clabecq Rue du Château / Tubize Bloc Scolaire</desc><type>Quais Tubize Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+</gpx>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Guidage lignes TEC" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net">
+<metadata><name>Quais_Nivelles-Gare</name><desc>Quais de Nivelles Gare d'après les données TEC (horaires en vigueur). Position des repères à ±20 m : le numéro affiché sur le quai fait foi.</desc></metadata>
+<wpt lat="50.601047" lon="4.334725"><name>Quai 1 : 62 · 70 · 73 · 77 · E2</name><desc>Départs : 62 → Tubize Gare ; 70 → Buzet Place de Buzet / Rosseignies Chapelle ; 73 → Fleurus Gare / Mellet SNCV ; E2 → Tubize Gare
+Arrivées : 62 ← Tubize Gare ; 70 ← Buzet Place de Buzet / Rosseignies Chapelle ; 73 ← Fleurus Gare / Villers-Perwin Bureau des Postes ; 77 ← Nivelles Grand Place ; E2 ← Tubize Gare</desc><type>Quais Nivelles Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.600441" lon="4.334656"><name>Quai 2 : 19 · E4</name><desc>Départs : 19 → Ottignies Gare - Av. Droits de l'Homme ; E4 → Louvain-la-Neuve Gare d'Autobus
+Arrivées : 19 ← Ottignies Gare - Av. Droits de l'Homme ; E4 ← Louvain-la-Neuve Gare d'Autobus
+Passages : 19 → Genappe La Praie / Nivelles Collège (Rue de Mons) / Nivelles Grand Place / Ottignies Gare - Av. Droits de l'Homme</desc><type>Quais Nivelles Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.600369" lon="4.334801"><name>Quai 3 : 63 · 65 · 66 · 69</name><desc>Départs : 63 → Braine-le-Comte Gare ; 65 → Braine-le-Comte Gare / Virginal Plateau du Tram ; 66 → Bois-Seigneur-Isaac Centre / Braine-l'Alleud Gare ; 69 → Braine-le-Chateau Quatre Bras (Rue de Nivelles) / Haut-Ittre Boulevard Piron (Ch. de Nivelles)
+Arrivées : 63 ← Braine-le-Comte Gare ; 65 ← Braine-le-Comte Gare / Virginal Plateau du Tram ; 66 ← Bois-Seigneur-Isaac Centre / Braine-l'Alleud Gare ; 69 ← Braine-le-Chateau Quatre Bras (Rue de Nivelles) / Haut-Ittre Boulevard Piron (Ch. de Nivelles)</desc><type>Quais Nivelles Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.600433" lon="4.334890"><name>Quai 4 : E7</name><desc>Départs : E7 → La Louviere SNCB Sud
+Arrivées : E7 ← La Louviere SNCB Sud</desc><type>Quais Nivelles Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.600244" lon="4.334904"><name>Quai 5 : 71 · 72 · 74 · 76</name><desc>Départs : 71 → Soignies Hôpital (Ch. de Braine) ; 72 → Baulers Eglise / Manage Gare / Manage Place ; 74 → Feluy Place ; 76 → Nivelles Allemagne / Nivelles Joseph Luns
+Arrivées : 71 ← Soignies Hôpital (Ch. de Braine) ; 72 ← Baulers Eglise / Manage Gare / Seneffe Centre ; 74 ← Feluy Place ; 76 ← Nivelles Allemagne / Nivelles Joseph Luns
+Passages : 72 → Baulers Eglise / Manage Gare</desc><type>Quais Nivelles Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.600003" lon="4.334867"><name>Quai 6 : 568</name><desc>Départs : 568 → Baisy-Thy Quatre Bras (Rue de Houtain) / Fleurus Gare / Marbais Chaussée de Namur / Nivelles Ecole Enfant Jésus / Sart-Dames-Avelines Bas Jaune
+Arrivées : 568 ← Baisy-Thy Quatre Bras (Ch. de Namur) / Fleurus Gare / Marbais Chaussée de Namur / Nivelles Institut Technique / Sart-Dames-Avelines Bas Jaune
+Passages : 568 → Fleurus Gare / Marbisoux Eglise / Nivelles Collège (Rue de Mons) / Nivelles Grand Place</desc><type>Quais Nivelles Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.599779" lon="4.334812"><name>Quai 7 : 16</name><desc>Départs : 16 → Nivelles Maîtrise
+Arrivées : 16 ← Nivelles Chemin Vieille Cour</desc><type>Quais Nivelles Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+</gpx>

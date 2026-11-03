@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Guidage lignes TEC" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net">
+<metadata><name>Quais_Braine-L-Alleud-Gare</name><desc>Quais de Braine-l'Alleud Gare d'après les données TEC (horaires en vigueur). Position des repères à ±20 m : le numéro affiché sur le quai fait foi.</desc></metadata>
+<wpt lat="50.684482" lon="4.375474"><name>Quai 1 : 65 · 66</name><desc>Départs : 65 → Braine-le-Comte Gare / Virginal Plateau du Tram ; 66 → Nivelles Gare
+Arrivées : 65 ← Braine-le-Comte Gare / Virginal Plateau du Tram ; 66 ← Nivelles Gare</desc><type>Quais Braine-l'Alleud Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.684256" lon="4.375430"><name>Quai 2 : 75 · E9</name><desc>Départs : 75 → Chenois Place / Waterloo Gare (Av des Cèdres) ; E9 → Tubize Gare
+Arrivées : 75 ← Chenois Place / Waterloo Gare (Av des Cèdres) ; E9 ← Tubize Gare
+Passages : 75 → Chenois Place / Waterloo Gare (Av des Cèdres)</desc><type>Quais Braine-l'Alleud Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.684092" lon="4.375399"><name>Quai 3 : E3</name><desc>Départs : E3 → Louvain-la-Neuve Gare d'Autobus
+Arrivées : E3 ← Louvain-la-Neuve Gare d'Autobus</desc><type>Quais Braine-l'Alleud Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.683862" lon="4.375368"><name>Quai 4 : 39</name><desc>Passages : 39 → Louvain-la-Neuve Gare d'Autobus / Waterloo Place de la Gare</desc><type>Quais Braine-l'Alleud Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.683644" lon="4.375350"><name>Quai 5 : 114 · 115</name><desc>Départs : 114 → Halle Station - Perron 8 ; 115 → Ophain Village n°1 / Tubize Bloc Scolaire / Tubize Gare
+Arrivées : 114 ← Halle Station - Perron 8 ; 115 ← Ophain Village n°1 / Tubize Bloc Scolaire / Tubize Gare
+Passages : 114 → Halle Station - Perron 8 ; 115 → Braine-l'Alleud Collège - Gare Ab / Tubize Gare</desc><type>Quais Braine-l'Alleud Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.683194" lon="4.375267"><name>Quai 6 : 40</name><desc>Départs : 40 → Alsemberg Winderickxplein / Uccle Calevoet
+Arrivées : 40 ← Alsemberg Winderickxplein / Uccle Calevoet
+Passages : 40 → Braine-l'Alleud Collège - Gare Ab / Uccle Calevoet</desc><type>Quais Braine-l'Alleud Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.682995" lon="4.375224"><name>Quai 7 : 67</name><desc>Départs : 67 → Braine-l'Alleud Barrière / Braine-l'Alleud Bd de France
+Arrivées : 67 ← Braine-l'Alleud Barrière / Braine-l'Alleud Bd de France</desc><type>Quais Braine-l'Alleud Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.682718" lon="4.375174"><name>Quai 8 : 57 · 58</name><desc>Départs : 57 → La Hulpe Gare ; 58 → Genval Gare
+Arrivées : 57 ← La Hulpe Gare ; 58 ← Genval Gare</desc><type>Quais Braine-l'Alleud Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.682511" lon="4.375931"><name>Quai 9 (Av. Albert Ier) : 36</name><desc>Départs : 36 → Basse-Wavre Collège / Lasne Village (Rue de l'Eglise) / Wavre Gare
+Arrivées : 36 ← Basse-Wavre Collège / Lasne Village (Route de l'Etat) / Wavre Gare</desc><type>Quais Braine-l'Alleud Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.683099" lon="4.376050"><name>Quai 10 (Av. Albert Ier) : W</name><desc>Départs : W → Bruxelles Midi / Saint-Gilles Porte de Hal Metro
+Arrivées : W ← Bruxelles Midi / Saint-Gilles Porte de Hal Metro / Sint-Genesius-Rode Hoeve Blaret</desc><type>Quais Braine-l'Alleud Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+</gpx>

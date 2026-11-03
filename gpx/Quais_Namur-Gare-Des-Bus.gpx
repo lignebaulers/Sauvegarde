@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Guidage lignes TEC" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net">
+<metadata><name>Quais_Namur-Gare-Des-Bus</name><desc>Quais de Namur Gare des bus d'après les données TEC (horaires en vigueur). Position des repères à ±20 m : le numéro affiché sur le quai fait foi.</desc></metadata>
+<wpt lat="50.469421" lon="4.862338"><name>Quai 4 : E5</name><desc>Départs : E5 → Nivelles Zoning Nord</desc><type>Quais Namur Gare des bus</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.468856" lon="4.862727"><name>Quai 8 : E5</name><desc>Arrivées : E5 ← Nivelles Zoning Nord</desc><type>Quais Namur Gare des bus</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+</gpx>

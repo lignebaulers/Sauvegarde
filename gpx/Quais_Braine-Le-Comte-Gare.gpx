@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Guidage lignes TEC" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net">
+<metadata><name>Quais_Braine-Le-Comte-Gare</name><desc>Quais de Braine-le-Comte Gare d'après les données TEC (horaires en vigueur). Position des repères à ±20 m : le numéro affiché sur le quai fait foi.</desc></metadata>
+<wpt lat="50.605539" lon="4.137376"><name>Quai 1 : 116</name><desc>Départs : 116 → Quenast Place / Soignies Gare / Tubize Gare
+Arrivées : 116 ← Rebecq Gare (Ballodrome) / Soignies Gare / Tubize Gare
+Passages : 116 → Rebecq Gare / Soignies Gare / Tubize Gare</desc><type>Quais Braine-le-Comte Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.605614" lon="4.137556"><name>Quai 2 : 63 · 65</name><desc>Départs : 63 → Nivelles Gare ; 65 → Braine-l'Alleud Gare / Nivelles Gare
+Arrivées : 63 ← Nivelles Gare ; 65 ← Braine-l'Alleud Gare / Nivelles Gare / Virginal Ancienne Gare</desc><type>Quais Braine-le-Comte Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+</gpx>

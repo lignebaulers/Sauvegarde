@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Guidage lignes TEC" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net">
+<metadata><name>Quais_La-Louviere-Sncb-Sud</name><desc>Quais de La Louviere SNCB Sud d'après les données TEC (horaires en vigueur). Position des repères à ±20 m : le numéro affiché sur le quai fait foi.</desc></metadata>
+<wpt lat="50.465897" lon="4.187431"><name>Quai H : E7</name><desc>Départs : E7 → Nivelles Gare
+Arrivées : E7 ← Nivelles Gare</desc><type>Quais La Louviere SNCB Sud</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+</gpx>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Guidage lignes TEC" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net">
+<metadata><name>Quais_Enghien-Edingen-Sncb-Station</name><desc>Quais de Enghien/Edingen SNCB/Station d'après les données TEC (horaires en vigueur). Position des repères à ±20 m : le numéro affiché sur le quai fait foi.</desc></metadata>
+<wpt lat="50.697057" lon="4.046796"><name>Quai A : 471 · 472</name><desc>Départs : 471 → Halle Station - Perron 8 ; 472 → Tubize Gare
+Arrivées : 471 ← Halle Station - Perron 8 ; 472 ← Tubize Bloc Scolaire / Tubize Gare
+Passages : 471 → Enghien/Edingen Dodane / Halle Don Bosco / Halle Station - Perron 8 / Marcq/Mark Bassin de Natation/Zwembad / Sint-Pieters-Kapelle Beuterkens ; 472 → Marcq/Mark Bassin de Natation/Zwembad / Tubize Gare</desc><type>Quais Enghien/Edingen SNCB/Station</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+</gpx>

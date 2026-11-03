@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Guidage lignes TEC" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net">
+<metadata><name>Quais_Wavre-Gare</name><desc>Quais de Wavre Gare d'après les données TEC (horaires en vigueur). Position des repères à ±20 m : le numéro affiché sur le quai fait foi.</desc></metadata>
+<wpt lat="50.715645" lon="4.604888"><name>Quai 1 : 23 · 32</name><desc>Départs : 23 → Biez Route de Morsaint / Doiceau Drève d'Ursel / Roux-Miroir Bosquet ; 32 → Hamme-Mille Gare d'Autobus / Nethen Eglise (Rue de Bossut)
+Arrivées : 32 ← Hamme-Mille Gare d'Autobus / Nethen Eglise (Rue de Bossut)</desc><type>Quais Wavre Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.715485" lon="4.604694"><name>Quai 2 : 23</name><desc>Départs : 23 → Grez-Doiceau Ancienne Station / Jodoigne Gare d'Autobus
+Arrivées : 23 ← Doiceau Drève d'Ursel / Jodoigne Gare d'Autobus / Roux-Miroir Bosquet
+Passages : 23 → Wavre Boulevard de l'Europe</desc><type>Quais Wavre Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.715270" lon="4.604437"><name>Quai 3 : 20</name><desc>Départs : 20 → Louvain-la-Neuve Gare d'Autobus / Ottignies Gare - Av. Droits de l'Homme
+Arrivées : 20 ← Louvain-la-Neuve Gare d'Autobus / Ottignies Gare - Av. Droits de l'Homme</desc><type>Quais Wavre Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.715033" lon="4.604150"><name>Quai 4 : 36 · 543</name><desc>Départs : 543 → Chaumont-Gistoux Eglise / Chaumont-Gistoux Queue de Veau (Rue Croisette)
+Arrivées : 543 ← Chaumont-Gistoux  Rue de Corroy / Eghezee Centre / Perwez Place
+Passages : 36 → Basse-Wavre Collège / Braine-l'Alleud Gare - Quai 9 (Av. Albert Ier) ; 543 → Auderghem Herrmann-Debroux / Chaumont-Gistoux Eglise / Eghezee Centre / Perwez Place</desc><type>Quais Wavre Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.714831" lon="4.603956"><name>Quai 5 : 36</name><desc>Départs : 36 → Braine-l'Alleud Gare - Quai 9 (Av. Albert Ier)
+Arrivées : 36 ← Braine-l'Alleud Gare - Quai 9 (Av. Albert Ier)
+Passages : 36 → Braine-l'Alleud Gare - Quai 9 (Av. Albert Ier)</desc><type>Quais Wavre Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.715015" lon="4.604290"><name>Quai 6 : E11 · E12</name><desc>Passages : E11 → Ixelles Plaine ; E12 → Woluwe Métro Roodebeek</desc><type>Quais Wavre Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.715217" lon="4.604534"><name>Quai 7 : E13</name><desc>Départs : E13 → Auderghem Herrmann-Debroux
+Arrivées : E13 ← Auderghem Herrmann-Debroux</desc><type>Quais Wavre Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.715431" lon="4.604790"><name>Quai 8 : 22 · E6</name><desc>Arrivées : 22 ← Ottignies Gare - Av. Droits de l'Homme
+Passages : 22 → Wavre Parc Artisanal ; E6 → Wavre Parc Artisanal</desc><type>Quais Wavre Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.715461" lon="4.605042"><name>Quai 10 : 24 · 37 · 125</name><desc>Départs : 24 → Chastre Dépôt ; 37 → Bierges Verseau ; 125 → Waterloo Berlaymont
+Arrivées : 24 ← Chastre Dépôt ; 37 ← Bierges Verseau ; 125 ← Waterloo Berlaymont</desc><type>Quais Wavre Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.715371" lon="4.604929"><name>Quai 11 : 38 · E6</name><desc>Passages : 38 → Rosieres Eglise / Wavre Basse-Wavre ; E6 → Gembloux Gare</desc><type>Quais Wavre Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.715142" lon="4.604632"><name>Quai 12 : 22</name><desc>Départs : 22 → Ottignies Gare - Av. Droits de l'Homme
+Passages : 22 → Ottignies Gare - Av. Droits de l'Homme</desc><type>Quais Wavre Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.714907" lon="4.604313"><name>Quai 13 : E11 · E12</name><desc>Passages : E11 → Louvain-la-Neuve Gare d'Autobus ; E12 → Louvain-la-Neuve Gare d'Autobus</desc><type>Quais Wavre Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+</gpx>

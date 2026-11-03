@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Guidage lignes TEC" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net">
+<metadata><name>L69_06_Braine-Le-Chateau-Quatre-Bra_vers_Haut-Ittre-La-Bruyere_6arr</name><desc>Ligne 69 – BRAINE-LE-CHATEAU Quatre Bras (Rue de Nivelles) → HAUT-ITTRE La Bruyère – 6 arrêts – 2.6 km – départs : 16:22</desc></metadata>
+<wpt lat="50.682214" lon="4.273032"><name>01 BRAINE-LE-CHATEAU Quatre Bras (Rue de Nivelles)</name><desc>Arrêt 1/6 – ligne 69</desc><type>Arrêts ligne 69</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
+<wpt lat="50.677973" lon="4.274209"><name>02 BRAINE-LE-CHATEAU Rue Cabiau</name><desc>Arrêt 2/6 – ligne 69</desc><type>Arrêts ligne 69</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
+<wpt lat="50.674915" lon="4.275220"><name>03 BRAINE-LE-CHATEAU Rue des Dévoués</name><desc>Arrêt 3/6 – ligne 69</desc><type>Arrêts ligne 69</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
+<wpt lat="50.670059" lon="4.276836"><name>04 BRAINE-LE-CHATEAU Les Minous</name><desc>Arrêt 4/6 – ligne 69</desc><type>Arrêts ligne 69</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
+<wpt lat="50.666201" lon="4.283557"><name>05 BRAINE-LE-CHATEAU La Maisonnée</name><desc>Arrêt 5/6 – ligne 69</desc><type>Arrêts ligne 69</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
+<wpt lat="50.664012" lon="4.290196"><name>06 HAUT-ITTRE La Bruyère</name><desc>Arrêt 6/6 – ligne 69</desc><type>Arrêts ligne 69</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
+<trk><name>L69_06_Braine-Le-Chateau-Quatre-Bra_vers_Haut-Ittre-La-Bruyere_6arr</name><desc>Ligne 69 – BRAINE-LE-CHATEAU Quatre Bras (Rue de Nivelles) → HAUT-ITTRE La Bruyère – 6 arrêts – 2.6 km – départs : 16:22</desc><trkseg>
+<trkpt lat="50.682221" lon="4.273094"/>
+<trkpt lat="50.682159" lon="4.273111"/>
+<trkpt lat="50.681960" lon="4.273160"/>
+<trkpt lat="50.681832" lon="4.273197"/>
+<trkpt lat="50.681531" lon="4.273285"/>
+<trkpt lat="50.681218" lon="4.273371"/>
+<trkpt lat="50.681050" lon="4.273402"/>
+<trkpt lat="50.679207" lon="4.273936"/>
+<trkpt lat="50.678789" lon="4.274046"/>
+<trkpt lat="50.677980" lon="4.274271"/>
+<trkpt lat="50.677980" lon="4.274271"/>
+<trkpt lat="50.677278" lon="4.274467"/>
+<trkpt lat="50.676276" lon="4.274780"/>
+<trkpt lat="50.675457" lon="4.275057"/>
+<trkpt lat="50.675203" lon="4.275187"/>
+<trkpt lat="50.674923" lon="4.275282"/>
+<trkpt lat="50.674923" lon="4.275282"/>
+<trkpt lat="50.674841" lon="4.275310"/>
+<trkpt lat="50.673397" lon="4.275793"/>
+<trkpt lat="50.673119" lon="4.275885"/>
+<trkpt lat="50.673060" lon="4.275907"/>
+<trkpt lat="50.672932" lon="4.275951"/>
+<trkpt lat="50.672461" lon="4.276113"/>
+<trkpt lat="50.671874" lon="4.276309"/>
+<trkpt lat="50.670380" lon="4.276810"/>
+<trkpt lat="50.670349" lon="4.276822"/>
+<trkpt lat="50.670066" lon="4.276898"/>
+<trkpt lat="50.670066" lon="4.276898"/>
+<trkpt lat="50.669771" lon="4.276978"/>
+<trkpt lat="50.669401" lon="4.277091"/>
+<trkpt lat="50.669299" lon="4.277135"/>
+<trkpt lat="50.669093" lon="4.277224"/>
+<trkpt lat="50.668912" lon="4.277315"/>
+<trkpt lat="50.668768" lon="4.277399"/>
+<trkpt lat="50.668750" lon="4.277409"/>
+<trkpt lat="50.668667" lon="4.277461"/>
+<trkpt lat="50.668585" lon="4.277527"/>
+<trkpt lat="50.668492" lon="4.277600"/>
+<trkpt lat="50.668418" lon="4.277678"/>
+<trkpt lat="50.668281" lon="4.277857"/>
+<trkpt lat="50.668181" lon="4.277998"/>
+<trkpt lat="50.668146" lon="4.278048"/>
+<trkpt lat="50.668067" lon="4.278164"/>
+<trkpt lat="50.667987" lon="4.278317"/>
+<trkpt lat="50.667930" lon="4.278443"/>
+<trkpt lat="50.667848" lon="4.278643"/>
+<trkpt lat="50.667787" lon="4.278793"/>
+<trkpt lat="50.667665" lon="4.279151"/>
+<trkpt lat="50.667436" lon="4.279863"/>
+<trkpt lat="50.667343" lon="4.280149"/>
+<trkpt lat="50.667141" lon="4.280777"/>
+<trkpt lat="50.666378" lon="4.283137"/>
+<trkpt lat="50.666333" lon="4.283281"/>
+<trkpt lat="50.666237" lon="4.283585"/>
+<trkpt lat="50.666237" lon="4.283585"/>
+<trkpt lat="50.666159" lon="4.283831"/>
+<trkpt lat="50.665994" lon="4.284361"/>
+<trkpt lat="50.665857" lon="4.284763"/>
+<trkpt lat="50.665744" lon="4.285094"/>
+<trkpt lat="50.665695" lon="4.285250"/>
+<trkpt lat="50.665258" lon="4.286629"/>
+<trkpt lat="50.664992" lon="4.287395"/>
+<trkpt lat="50.664526" lon="4.288785"/>
+<trkpt lat="50.664181" lon="4.289825"/>
+<trkpt lat="50.664048" lon="4.290226"/>
+</trkseg></trk></gpx>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Guidage lignes TEC" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net">
+<metadata><name>Quais_Soignies-Gare</name><desc>Quais de Soignies Gare d'après les données TEC (horaires en vigueur). Position des repères à ±20 m : le numéro affiché sur le quai fait foi.</desc></metadata>
+<wpt lat="50.573251" lon="4.068584"><name>Quai E : 116</name><desc>Départs : 116 → Braine-le-Comte Gare / Rebecq Gare / Tubize Gare
+Arrivées : 116 ← Braine-le-Comte Gare / Rebecq Gare / Tubize Gare</desc><type>Quais Soignies Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+</gpx>

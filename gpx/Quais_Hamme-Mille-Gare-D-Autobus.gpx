@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Guidage lignes TEC" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net">
+<metadata><name>Quais_Hamme-Mille-Gare-D-Autobus</name><desc>Quais de Hamme-Mille Gare d'Autobus d'après les données TEC (horaires en vigueur). Position des repères à ±20 m : le numéro affiché sur le quai fait foi.</desc></metadata>
+<wpt lat="50.778239" lon="4.715801"><name>Quai 1 : 18</name><desc>Départs : 18 → Leuven Station - Perron 1
+Arrivées : 18 ← Jodoigne Gare d'Autobus
+Passages : 18 → Leuven Station - Perron 1</desc><type>Quais Hamme-Mille Gare d'Autobus</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.778418" lon="4.715564"><name>Quai 2 : 32</name><desc>Arrivées : 32 ← Wavre Gare
+Passages : 32 → Nethen Eglise (Rue de Bossut)</desc><type>Quais Hamme-Mille Gare d'Autobus</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.778653" lon="4.715379"><name>Quai 3 : 6</name><desc>Passages : 6 → Louvain-la-Neuve Gare d'Autobus</desc><type>Quais Hamme-Mille Gare d'Autobus</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.778676" lon="4.715537"><name>Quai 4 : 6</name><desc>Passages : 6 → Mille Rue J. Coisman / Mille Rue St-Corneille</desc><type>Quais Hamme-Mille Gare d'Autobus</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.778389" lon="4.715777"><name>Quai 5 : 32</name><desc>Départs : 32 → Grez-Doiceau Poste (Rue du Chaufour) / Wavre Gare
+Passages : 32 → Wavre Gare</desc><type>Quais Hamme-Mille Gare d'Autobus</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.778237" lon="4.715977"><name>Quai 6 : 18</name><desc>Départs : 18 → Jodoigne Gare d'Autobus
+Arrivées : 18 ← Leuven Station - Perron 14
+Passages : 18 → Jodoigne Gare d'Autobus</desc><type>Quais Hamme-Mille Gare d'Autobus</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+</gpx>

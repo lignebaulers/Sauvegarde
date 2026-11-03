@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Guidage lignes TEC" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net">
+<metadata><name>Quais_Rixensart-Gare</name><desc>Quais de Rixensart Gare d'après les données TEC (horaires en vigueur). Position des repères à ±20 m : le numéro affiché sur le quai fait foi.</desc></metadata>
+<wpt lat="50.713366" lon="4.530945"><name>Quai 1 : 36 · 125</name><desc>Départs : 36 → Braine-l'Alleud Vallée Bailly
+Passages : 36 → Basse-Wavre Collège / Braine-l'Alleud Gare - Quai 9 (Av. Albert Ier) / Wavre Gare ; 125 → Waterloo Berlaymont / Wavre Gare</desc><type>Quais Rixensart Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.713524" lon="4.530753"><name>Quai 2 : 36 · 125</name><desc>Passages : 36 → Basse-Wavre Collège / Braine-l'Alleud Gare - Quai 9 (Av. Albert Ier) / Wavre Gare ; 125 → Waterloo Berlaymont / Wavre Gare</desc><type>Quais Rixensart Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.713674" lon="4.530578"><name>Quai 3 : 14</name><desc>Départs : 14 → Rixensart Gare
+Arrivées : 14 ← Rixensart Gare</desc><type>Quais Rixensart Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+</gpx>

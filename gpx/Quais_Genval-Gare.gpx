@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Guidage lignes TEC" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net">
+<metadata><name>Quais_Genval-Gare</name><desc>Quais de Genval Gare d'après les données TEC (horaires en vigueur). Position des repères à ±20 m : le numéro affiché sur le quai fait foi.</desc></metadata>
+<wpt lat="50.725863" lon="4.514355"><name>Quai 1 : 366</name><desc>Passages : 366 → Ixelles Flagey</desc><type>Quais Genval Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.726122" lon="4.513968"><name>Quai 2 : 15</name><desc>Départs : 15 → Genval Gare / Rosieres Eglise
+Arrivées : 15 ← Genval Gare</desc><type>Quais Genval Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.726072" lon="4.513869"><name>Quai 3 : 366</name><desc>Départs : 366 → Court-Saint-Etienne Ecole Provinciale (Parc)
+Passages : 366 → Court-Saint-Etienne Ecole Provinciale (Parc) / Limelette Château / Rixensart Chaussée de Wavre</desc><type>Quais Genval Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.725834" lon="4.514219"><name>Quai 4 : 38 · 58 · 128</name><desc>Départs : 58 → Braine-l'Alleud Gare / Ohain Messager (Rte de Genval) / Ransbeck Square du Coq
+Arrivées : 58 ← Braine-l'Alleud Collège - Gare Ab / Braine-l'Alleud Gare / Ransbeck Square du Coq / Waterloo Mont-Saint-Jean (Ch. de Louvain)
+Passages : 38 → Rosieres Eglise / Wavre Basse-Wavre ; 128 → Rosieres Eglise / Waterloo Berlaymont</desc><type>Quais Genval Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+</gpx>

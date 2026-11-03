@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Guidage lignes TEC" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net">
+<metadata><name>Quais_La-Hulpe-Gare</name><desc>Quais de La Hulpe Gare d'après les données TEC (horaires en vigueur). Position des repères à ±20 m : le numéro affiché sur le quai fait foi.</desc></metadata>
+<wpt lat="50.737156" lon="4.497673"><name>Quai 1 : 57</name><desc>Départs : 57 → Braine-l'Alleud Gare
+Arrivées : 57 ← Braine-l'Alleud Gare</desc><type>Quais La Hulpe Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.737022" lon="4.497835"><name>Quai 2 : 210</name><desc>Départs : 210 → La Hulpe Gare
+Arrivées : 210 ← La Hulpe Gare</desc><type>Quais La Hulpe Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.737257" lon="4.498133"><name>Quai 3 : 10</name><desc>Départs : 10 → La Hulpe Gare
+Arrivées : 10 ← La Hulpe Gare</desc><type>Quais La Hulpe Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.737318" lon="4.497913"><name>Quai 4 : 127</name><desc>Départs : 127 → Waterloo Berlaymont
+Arrivées : 127 ← Waterloo Berlaymont</desc><type>Quais La Hulpe Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+</gpx>

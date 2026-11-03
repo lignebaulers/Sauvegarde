@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="Guidage lignes TEC" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net">
+<metadata><name>Quais_Gembloux-Gare</name><desc>Quais de Gembloux Gare d'après les données TEC (horaires en vigueur). Position des repères à ±20 m : le numéro affiché sur le quai fait foi.</desc></metadata>
+<wpt lat="50.571017" lon="4.688973"><name>Quai 7 : E6</name><desc>Départs : E6 → Wavre Parc Artisanal
+Arrivées : E6 ← Wavre Parc Artisanal</desc><type>Quais Gembloux Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.570943" lon="4.689158"><name>Quai 8 : 25</name><desc>Départs : 25 → Jodoigne Athénée Royal / Jodoigne Gare d'Autobus / Walhain-Saint-Paul Monument (Rue du Centre) / Walhain-Saint-Paul Saint-Paul
+Arrivées : 25 ← Jodoigne Gare d'Autobus / Walhain-Saint-Paul Saint-Paul
+Passages : 25 → Chastre Dépôt / Gembloux Quatre coins / Grand-Manil Rue Verlaine</desc><type>Quais Gembloux Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.570851" lon="4.689380"><name>Quai 9 : 27</name><desc>Départs : 27 → Chastre Dépôt
+Arrivées : 27 ← Chastre Dépôt
+Passages : 27 → Chastre Dépôt / Gembloux Quatre coins</desc><type>Quais Gembloux Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.570747" lon="4.689636"><name>Quai 10 : 52</name><desc>Départs : 52 → Chastre Dépôt / Louvain-la-Neuve Gare d'Autobus
+Arrivées : 52 ← Chastre Dépôt / Louvain-la-Neuve Gare d'Autobus
+Passages : 52 → Chastre Dépôt / Gembloux Quatre coins / Louvain-la-Neuve Gare d'Autobus</desc><type>Quais Gembloux Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.570646" lon="4.689886"><name>Quai 11 : 148</name><desc>Départs : 148 → Landen Station / Sauveniere Malakoff (Rue Poswick)</desc><type>Quais Gembloux Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+<wpt lat="50.570557" lon="4.690080"><name>Quai 12 : 148</name><desc>Départs : 148 → Landen Station / Orp-le-Grand Eglise (Pl. 11è Dragons Français) / Perwez Place / Ramillies Eglise / Ramillies Gare / Thorembais-Saint-Trond Carrefour (Ch. de Wavre)
+Arrivées : 148 ← Landen Station / Orp-le-Grand Eglise (Pl. 11è Dragons Français) / Orp-le-Petit Place (Rue Jadot) / Perwez Place / Ramillies Gare / Sauveniere Malakoff (Rue Poswick)</desc><type>Quais Gembloux Gare</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>square</osmand:background><osmand:color>#1565c0</osmand:color></extensions></wpt>
+</gpx>
