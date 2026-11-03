@@ -1,6 +1,6 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Lignes Baulers</title>
-<meta name="robots" content="noindex, nofollow"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-180.png"><link rel="icon" type="image/png" href="icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Lignes Baulers"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="theme-color" content="#17191b"><script>window.__LB_SITE__=true;window.__LB_VER__="v22";if('serviceWorker' in navigator&&(location.protocol==='https:'||location.hostname==='localhost'||location.hostname==='127.0.0.1'))addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));</script>
+<meta name="robots" content="noindex, nofollow"><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icon-180.png"><link rel="icon" type="image/png" href="icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Lignes Baulers"><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="theme-color" content="#17191b"><script>window.__LB_SITE__=true;window.__LB_VER__="v22.1";if('serviceWorker' in navigator&&(location.protocol==='https:'||location.hostname==='localhost'||location.hostname==='127.0.0.1'))addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));</script>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Doto:wght@700;900&family=IBM+Plex+Mono:wght@500;600&display=swap">
@@ -1423,21 +1423,21 @@ $('bkSiteCopy').onclick=async()=>{const b=$('bkSiteCopy');try{await navigator.cl
 document.querySelectorAll('.siteonly').forEach(e=>e.hidden=!SITE);document.querySelectorAll('.claudeonly').forEach(e=>e.hidden=SITE);
 function findGpx(name){const P=(DATA.pkg&&DATA.pkg.files)||{};for(const k in P){if(k.slice(k.indexOf('/')+1)===name)return gpxFile(name,P[k])}
   for(const ln in DATA.lines){const v=DATA.lines[ln].variants.find(x=>x.file===name);if(v)return gpx(ln,v)}return null}
-function deliver(name,blob,type){let f=null;try{f=new File([blob],name,{type})}catch(e){}
+function deliver(name,blob,type){let f=null;try{f=type?new File([blob],name,{type}):new File([blob],name)}catch(e){}
   if(f&&navigator.share&&navigator.canShare){let ok=false;try{ok=navigator.canShare({files:[f]})}catch(e){}
     if(ok)return navigator.share({files:[f]}).then(()=>'shared',e=>e&&e.name==='AbortError'?'cancel':saveBlob(name,blob))}
   return Promise.resolve(saveBlob(name,blob))}
 function saveBlob(name,blob){const u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download=name;a.rel='noopener';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),60000);return 'saved'}
 function flash(btn,txt){if(!btn)return;const old=btn.dataset.lbl||btn.innerHTML;btn.dataset.lbl=old;btn.textContent=txt;clearTimeout(btn._t);btn._t=setTimeout(()=>{btn.innerHTML=old;delete btn.dataset.lbl},5000)}
 function openInOsmand(name,btn){const g=findGpx(name);if(!g){flash(btn,'Fichier introuvable');return}
-  deliver(name+'.gpx',new Blob([g],{type:'application/gpx+xml'}),'application/gpx+xml').then(r=>{if(r==='shared')flash(btn,'Envoyé ✓');else if(r==='saved')flash(btn,'Téléchargé ✓ : Fichiers › Téléchargements › touche-le › OsmAnd')})}
+  deliver(name+'.gpx',new Blob([g]),'').then(r=>{if(r==='shared')flash(btn,'Envoyé ✓');else if(r==='saved')flash(btn,'Téléchargé ✓ : Fichiers › Téléchargements › touche-le › OsmAnd')})}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-o]');if(!b||!SITE||!b.dataset.o)return;e.preventDefault();openInOsmand(b.dataset.o,b)});
 let OSF=null,OSFp=null;
 function loadOsf(){if(OSFp)return OSFp;const msg=$('bkMsg');msg.textContent='Chargement de la sauvegarde…';
   OSFp=fetch('TEC_Baulers_sauvegarde.osf').then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.blob()}).then(b=>{OSF=b;msg.textContent=`Prête : ${(b.size/1e6).toFixed(1)} Mo, version du ${(DATA.maj&&DATA.maj.publie)||'?'}.`;return b})
     .catch(e=>{OSFp=null;msg.textContent='Sauvegarde pas encore chargée (pas de réseau ?). Réessaie avec du réseau, ou utilise « Télécharger ».';throw e});return OSFp}
 if(SITE){$('bkShare').onclick=()=>{const b=$('bkShare');if(!OSF){loadOsf().then(()=>flash(b,'Prête : touche encore'),()=>{});return}
-    deliver('TEC_Baulers_sauvegarde_'+((DATA.maj&&DATA.maj.publie)||'').slice(0,5).replace('/','-')+'.osf',OSF,'application/octet-stream').then(r=>{if(r==='shared')flash(b,'Envoyé ✓');else if(r==='saved')flash(b,'Téléchargé ✓ : Fichiers › Téléchargements')})};
+    deliver('TEC_Baulers_sauvegarde_'+((DATA.maj&&DATA.maj.publie)||'').slice(0,5).replace('/','-')+'.osf',OSF,'').then(r=>{if(r==='shared')flash(b,'Envoyé ✓');else if(r==='saved')flash(b,'Téléchargé ✓ : Fichiers › Téléchargements')})};
   const bar=()=>{const mj=DATA.maj||{};$('siteBar').textContent=`Version du ${mj.publie||'?'}`+(navigator.onLine?'':' · hors ligne : version gardée sur ce téléphone')};
   bar();addEventListener('online',bar);addEventListener('offline',bar);
   fetch('version.json',{cache:'no-store'}).then(r=>r.ok?r.json():null).then(j=>{if(j&&j.v&&j.v!==window.__LB_VER__)$('updBar').hidden=false}).catch(()=>{});
