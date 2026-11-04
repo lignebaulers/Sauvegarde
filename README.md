@@ -13,6 +13,7 @@ Si tu avais déjà un dossier TEC_Parcours dans OsmAnd, supprime-le d'abord.
 
 - Marche sans réseau une fois ouvert une première fois.
 - Bouton « ▶ Ouvrir dans OsmAnd » sur chaque parcours, trajet dépôt et course de « Mon service ».
+- Bouton OsmAnd : installe une fois le raccourci iPhone « OsmAnd TEC » : https://www.icloud.com/shortcuts/8dcf2ed462ad412db77625758dfb6b18
 - Sur iPhone : dans Safari, Partager › « Sur l'écran d'accueil » pour l'avoir comme une app.
 
 Outil non officiel, fait à partir des données ouvertes du TEC (GTFS) et des avis affichés au dépôt. Le papier au dépôt et la signalisation priment toujours.
