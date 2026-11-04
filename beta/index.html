@@ -1800,7 +1800,7 @@ $('aq').oninput=renderAvis;
 $('aList').addEventListener('click',e=>{const b=e.target.closest('.lchip');if(b&&DATA.lines[b.dataset.l])pickLine(b.dataset.l)});
 document.querySelector('.girouette').addEventListener('click',()=>{if(S.step!==1)$('restart').click()});
 /* ---------- Signaler une erreur : formulaire dans l'appli, envoi anonyme au relais (Apps Script → Drive), photos, file d'attente hors ligne ---------- */
-const RELAY=''; /* adresse « /exec » du relais Apps Script : vide = démonstration (essai) ou bouton caché (site) */
+const RELAY='https://script.google.com/macros/s/AKfycbzWeJ7MfgZRXSpbTJgQiSwUYHYBejYW9CGLlsC39g5H36Fr3Mj9ovd_-0juzG-OblkM4A/exec'; /* relais Apps Script (compte du dépôt) : texte + photos -> tableau et dossier « Lignes Baulers – signalements » du Drive */
 const REP={photos:[],gps:''};const REPQ='repQ2';const MAXP=3;let REPMEM=[];
 function openReport(ctx){S.repBack=S.step;$('repWhere').value=ctx||'';$('repTxt').value='';document.querySelectorAll('#repType input').forEach(i=>i.checked=false);
   REP.photos=[];REP.gps='';repThumbs();$('repGps').checked=false;$('repMsg').textContent='';$('repSend').disabled=false;go(9)}
@@ -1840,7 +1840,7 @@ $('repSend').onclick=async()=>{const t=(document.querySelector('#repType input:c
 $('repCancel').onclick=()=>go(S.repBack!=null&&S.repBack!==9?S.repBack:1);
 document.addEventListener('click',e=>{const b=e.target.closest('[data-rep]');if(!b)return;e.preventDefault();e.stopPropagation();openReport(b.dataset.rep)},true);
 addEventListener('online',()=>repFlush());setTimeout(()=>repFlush(),3000);
-document.body.classList.toggle('norep',!RELAY&&!window.__LB_BETA__); /* signalement caché tant que le relais n'est pas branché (visible dans l'essai) */
+document.body.classList.toggle('norep',(!RELAY&&!window.__LB_BETA__)||!SITE); /* caché si relais non branché, et dans l'artefact Claude (il ne peut pas joindre Google) */
 /* ---------- Événements ---------- */
 $('q').oninput=renderLines;
 $('q').onkeydown=e=>{if(e.key==='Enter'){const q=$('q').value.trim().toUpperCase();const m=DATA.index.lines.find(l=>l.line.toUpperCase()===q);if(m)pickLine(m.line)}};
