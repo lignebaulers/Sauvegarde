@@ -329,6 +329,27 @@ footer{font-size:14px}
 .openlbl .st{font-size:24px}
 #s6>.note,#s6>.msg{margin:0 0 10px}
 body.site .svc code{display:none}
+
+/* r61b : accueil facile, écran Avis */
+.trail .home{margin-left:auto}
+.girouette{cursor:pointer}
+.avtile{margin:0 0 16px;border:2px solid #9c27b0}
+.svhead{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.svhead .svx{min-height:44px;padding:6px 12px;font-size:15px;flex:none}
+.asec{margin-bottom:12px}
+.asec>summary{font-size:18px}
+.acard{border:1px solid var(--line);border-left:5px solid #9c27b0;border-radius:10px;padding:10px 12px;margin:10px 0;display:flex;flex-direction:column;gap:6px;background:var(--bg)}
+.acard.cond{border-left-color:var(--hit-line)}.acard.fut{border-left-color:var(--accent)}.acard.old{border-left-color:var(--line);opacity:.85}
+.ahead{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;align-items:baseline}
+.ahead b{font-family:var(--f-data);font-size:17px}.ahead span{font-size:15px;color:var(--muted)}
+.alieu{font-size:17px;font-weight:700}
+.abadge{align-self:flex-start;font-size:14px;font-weight:700;border-radius:6px;padding:2px 8px;background:var(--hit);border:1px solid var(--hit-line)}
+.abadge.last{color:var(--stop);border-color:var(--stop)}
+.lchips{display:flex;flex-wrap:wrap;gap:6px}
+.lchip{font-family:var(--f-data);font-weight:700;font-size:16px;min-width:48px;min-height:40px;border:1px solid var(--line);border-radius:8px;background:var(--surface);padding:4px 8px}
+.lchip:disabled{opacity:.5}
+.acard small{font-size:14px;color:var(--muted)}
+.atxt{font-size:15px;margin:6px 0;line-height:1.45}
 </style>
 
 <div class="wrap">
@@ -341,6 +362,7 @@ body.site .svc code{display:none}
   <div class="svban" id="updBar" hidden><b>Nouvelle version de l'appli.</b> <button class="btn wide" id="updBtn" type="button">Mettre à jour l'appli</button></div>
   <nav class="trail" aria-label="Étapes" hidden>
     <button class="back" id="back" type="button" aria-label="Étape précédente">← Retour</button>
+    <button class="back home" type="button" data-go="1" aria-label="Retour à l'accueil">⌂ Accueil</button>
     <div class="crumbs" id="crumbs"></div>
   </nav>
   <div class="homebar" id="homeBar" hidden><button class="back" type="button" data-go="1">← Accueil</button></div>
@@ -389,6 +411,7 @@ body.site .svc code{display:none}
       </div>
     </details>
     <div class="homedev" id="homeDev" hidden></div>
+    <button class="tile avtile" type="button" data-go="8"><span class="ti">📢</span><span class="tt"><b>Avis et déviations</b><small id="aTileSub">Tous les avis du tableau, ligne par ligne</small></span><span class="chev">›</span></button>
     <h1>Quelle ligne ?</h1>
     <input class="search" id="q" type="search" inputmode="text" autocomplete="off" placeholder="Tape le numéro, ex. 72" aria-label="Numéro de ligne">
     <div id="lineGroups"><div class="empty">Chargement des lignes…</div></div>
@@ -626,6 +649,14 @@ Qui je suis : chauffeur de bus TEC au dépôt de Baulers (Brabant wallon). J&#x2
 En cas d&#x27;erreur dans l&#x27;appli : prévenir le collègue qui la tient à jour avec une photo du tableau ou une capture d&#x27;OsmAnd.
 </pre>
     </details>
+  </section>
+  <!-- 8. Avis -->
+  <section class="step" id="s8" hidden>
+    <h1>Avis et déviations</h1>
+    <p class="note" id="aSum"></p>
+    <input class="search" id="aq" type="search" inputmode="text" autocomplete="off" placeholder="Filtrer : ligne (ex. 36) ou lieu" aria-label="Filtrer les avis">
+    <div id="aList"></div>
+    <p class="note">Touche un numéro de ligne pour ouvrir son parcours. Le papier au dépôt et les panneaux priment toujours.</p>
   </section>
   <p class="note siteonly" id="siteBar" hidden></p>
   <footer id="src">Données : TEC open data (GTFS).</footer>
@@ -1343,6 +1374,7 @@ const dirVars=()=>S.data.variants.filter(v=>v.dir===S.dir&&(v.times.length||S.al
 function girouette(){const g=$('gNum'),d=$('gDest');
   if(S.step===0){g.textContent='HLP';d.innerHTML='Trajets à vide<small>Dépôt · entre deux lignes</small>';return}
   if(S.step===6){g.textContent='OSM';d.innerHTML='Mise à jour<small>OsmAnd · sauvegarde complète</small>';return}
+  if(S.step===8){g.textContent='AV';d.innerHTML='Avis<small>En cours · à venir · terminés</small>';return}
   if(S.step===7){g.textContent='?';d.innerHTML='Aide<small>Réglages et infos</small>';return}
   if(!S.line){g.textContent='--';d.innerHTML='Choisis ta ligne<small>Brabant wallon</small>';return}
   g.textContent=S.line;const v=variant();
@@ -1359,11 +1391,12 @@ function crumbs(){const c=[];
   $('crumbs').innerHTML=c.join('');$('back').hidden=S.step===1}
 const shortName=n=>n.split(' - ')[0];
 
-function go(step){S.step=step;for(let k=0;k<=7;k++)$('s'+k).hidden=k!==step;
+function go(step){S.step=step;for(let k=0;k<=8;k++)$('s'+k).hidden=k!==step;
   $('tabs').hidden=true;
   if(step===0)renderMoves();document.querySelector('.trail').hidden=!(step>=2&&step<=5);$('homeBar').hidden=!(step===0||step>=6);
   if(step===6){renderDevCheck();if(SITE)loadOsf().catch(()=>{});else buildBk().catch(()=>{})}
   if(step===7&&SITE&&IOS&&!store.get('fuOk'))$('scHelp').open=true;
+  if(step===8)renderAvis();
   if(step===1){renderLines();renderSvc();renderHomeDev()}if(step===2)renderDirs();if(step===3){renderTime();const n=document.querySelector('.tb.next');if(n)setTimeout(()=>n.scrollIntoView({block:'center',behavior:'smooth'}),80)}if(step===4)renderVars();if(step===5)renderResult();
   girouette();crumbs();window.scrollTo({top:0,behavior:'instant'in window?'instant':'auto'})}
 
@@ -1664,7 +1697,8 @@ if(store.get('osmSeen')===null)store.set('osmSeen',PUB); /* nouveau venu : pas d
 function renderHomeDev(){const b=$('homeDev');const on=(DATA.avis||[]).filter(a=>!a.cond&&a.from<=today&&(!a.to||a.to>=today)),dj=on.filter(a=>a.to===today);let x='';
   if(store.get('osmSeen')!==PUB)x+=`<b>🔄 Avis mis à jour le ${esc(PUB.slice(0,5))}</b><span>Tu as tous les parcours dans OsmAnd (sauvegarde complète) ? Remets-la à jour pour avoir les nouvelles déviations.</span><div class="row"><button class="btn" type="button" data-go="6">Mettre OsmAnd à jour</button><button class="btn ghost" type="button" id="hdOk">Plus tard</button></div>`;
   if(dj.length)x+=`<span class="warn">⏳ Dernier jour aujourd'hui : avis ${dj.map(a=>esc(a.n)+' ('+esc(a.lieu)+')').join(', ')}. Dès demain, il n'est plus appliqué.</span>`;
-  b.hidden=!x;b.innerHTML=x}
+  b.hidden=!x;b.innerHTML=x;
+  const fin=on.filter(a=>a.to&&a.to>=today).sort((p,q)=>p.to<q.to?-1:1)[0];$('aTileSub').textContent=`${on.length} avis en cours`+(fin?` · prochain fini : ${fin.n} le ${fr(fin.to)}`:'')+' · toutes les lignes concernées'}
 function renderFirstUse(){const fu=$('firstUse');if(!SITE||store.get('fuOk')||!(IOS||ANDROID)){fu.hidden=true;return}fu.hidden=false;
   fu.innerHTML=IOS?`<b>📲 Première fois sur iPhone ?</b><span>Installe une seule fois le raccourci « OsmAnd TEC » : ensuite, chaque bouton « ▶ Ouvrir dans OsmAnd » ouvre le trajet directement dans OsmAnd.</span><a class="btn wide" href="${esc($('scHelp').querySelector('a').href)}">Installer le raccourci</a><div class="row"><button class="btn ghost" type="button" data-go="7">Explications</button><button class="btn ghost" type="button" id="fuOk">C'est fait ✓</button></div>`
    :`<b>📲 Comment ça marche</b><span>« ▶ Ouvrir dans OsmAnd » télécharge le trajet. Touche <b>« Ouvrir »</b> dans la notification (ou Fichiers › Téléchargements), puis choisis <b>OsmAnd</b>.</span><div class="row"><button class="btn ghost" type="button" id="fuOk">J'ai compris ✓</button></div>`}
@@ -1674,6 +1708,31 @@ document.addEventListener('click',e=>{const t=e.target;
   if(t.closest('#hdOk')){store.set('osmSeen',PUB);renderHomeDev();return}
   if(t.closest('#bkShare,#bkDl,#bkBtn'))store.set('osmSeen',PUB);
   const g=t.closest('[data-go]');if(g){const n=+g.dataset.go;if(n===1)$('restart').click();else go(n)}});
+/* ---------- Écran Avis : tous les avis, lisibles, avec leurs lignes ---------- */
+function renderAvis(){const q=($('aq').value||'').trim(),Q=q.toUpperCase(),d=today,A=DATA.avis||[];
+  const lns=a=>lignesAvis(a).split(' ').filter(Boolean);
+  const hit=(n,ls,lieu)=>!q||ls.some(l=>l.toUpperCase()===Q)||String(n).toUpperCase().includes(Q)||norm(lieu||'').includes(norm(q));
+  const per=a=>a.to===a.from?`le ${fr(a.from)} seulement`:a.to?`du ${fr(a.from)} au ${fr(a.to)}`:`depuis le ${fr(a.from)}, sans date de fin`;
+  const chips=ls=>ls.map(l=>`<button class="lchip" type="button" data-l="${esc(l)}"${DATA.lines[l]?'':' disabled'}>${esc(l)}</button>`).join('');
+  const texts=a=>{const m=new Map();for(const[c,t]of Object.entries(a.codes||{})){if(!t)continue;const ln=(/^L(.+)_\d+$/.exec(c)||[])[1]||'?';if(!m.has(t))m.set(t,new Set());m.get(t).add(ln)}
+    return [...m].map(([t,s])=>`<p class="atxt"><b>Ligne${s.size>1?'s':''} ${esc([...s].join(', '))} :</b> ${esc(t)}</p>`).join('')||'<p class="atxt">Pas de texte enregistré.</p>'};
+  const badge=a=>a.cond?'<span class="abadge">⚠ Seulement si le dispatching l\'annonce</span>':(a.to===d?'<span class="abadge last">⏳ Dernier jour aujourd\'hui</span>':'')+(a.info?'<span class="abadge">Consigne, sans détour à suivre</span>':'');
+  const card=(a,c)=>`<div class="acard ${c}"><div class="ahead"><b>Avis ${esc(a.n)}</b><span>${esc(per(a))}</span></div><div class="alieu">${esc(a.lieu||'')}</div>${badge(a)}<div class="lchips">${chips(lns(a))}</div>${a.vu?`<small>Vu au tableau le ${esc(a.vu)}</small>`:''}<details class="mini"><summary>Lire l'avis</summary>${texts(a)}</details></div>`;
+  const f=a=>hit(a.n,lns(a),a.lieu);
+  const on=A.filter(a=>!a.cond&&a.from<=d&&(!a.to||a.to>=d)&&f(a)).sort((x,y)=>(x.to||'9')<(y.to||'9')?-1:1);
+  const cd=A.filter(a=>a.cond&&f(a)),fu=A.filter(a=>!a.cond&&a.from>d&&f(a)).sort((x,y)=>x.from<y.from?-1:1);
+  const old=A.filter(a=>!a.cond&&a.to&&a.to<d&&f(a)).sort((x,y)=>x.to<y.to?1:-1);
+  const rl=a=>String(a.lignes||'').split(/[\s,]+/).filter(Boolean);
+  const ret=(DATA.avisRetires||[]).filter(a=>hit(a.n,rl(a),a.lieu)).sort((x,y)=>(x.retire||x.to||'')<(y.retire||y.to||'')?1:-1);
+  const sec=(t,L,c,open)=>L.length?`<details class="box asec"${open?' open':''}><summary>${t} (${L.length})</summary>${L.map(a=>card(a,c)).join('')}</details>`:'';
+  $('aList').innerHTML=(sec('🟣 En cours',on,'on',true)+sec('⚠ Conditionnels',cd,'cond',true)+sec('📅 À venir',fu,'fut',true)+sec('🗂 Terminés, plus appliqués',old,'old',false)+
+    (ret.length?`<details class="box asec"><summary>❌ Retirés du tableau (${ret.length})</summary>${ret.map(a=>`<div class="acard old"><div class="ahead"><b>Avis ${esc(a.n)}</b><span>retiré le ${fr(a.retire||a.to||'')}</span></div><div class="alieu">${esc(a.lieu||'')}</div><div class="lchips">${chips(rl(a))}</div>${a.raison?`<small>${esc(a.raison)}</small>`:''}</div>`).join('')}</details>`:''))
+    ||`<div class="empty">Aucun avis pour « ${esc(q)} ».</div>`;
+  const all=A.filter(a=>!a.cond&&a.from<=d&&(!a.to||a.to>=d));
+  $('aSum').textContent=`Avis lus au tableau le ${(DATA.maj&&DATA.maj.tableau)||'?'} : ${all.length} en cours${cd.length&&!q?', '+cd.length+' conditionnel'+(cd.length>1?'s':''):''}. Les plus proches de la fin en premier.`}
+$('aq').oninput=renderAvis;
+$('aList').addEventListener('click',e=>{const b=e.target.closest('.lchip');if(b&&DATA.lines[b.dataset.l])pickLine(b.dataset.l)});
+document.querySelector('.girouette').addEventListener('click',()=>{if(S.step!==1)$('restart').click()});
 /* ---------- Événements ---------- */
 $('q').oninput=renderLines;
 $('q').onkeydown=e=>{if(e.key==='Enter'){const q=$('q').value.trim().toUpperCase();const m=DATA.index.lines.find(l=>l.line.toUpperCase()===q);if(m)pickLine(m.line)}};
@@ -1781,13 +1840,14 @@ function renderSvc(){const box=$('svc'),imp=$('svcImp');if(!SVC||!(SVC.courses||
     ban+=`<div class="svban">⚠ <b>${ms.k} course${ms.k>1?'s':''} sur ${ms.n}</b> de ta feuille ne roule${ms.k>1?'nt':''} pas le ${esc(dShort(day))} dans l'horaire TEC (${we?'week-end':'congé scolaire, férié ou autre horaire'}${SVC.periode?' ; ta feuille est « '+esc(SVC.periode)+' »':''}). Ce n'est pas une erreur de ta feuille : elle n'est simplement pas prévue pour ce jour-là.`+
       (nf?`<button class="btn" id="svFit" type="button" data-d="${nf}">Voir le ${esc(dShort(nf))} (prochain jour où elle correspond)</button>`:'')+`</div>`}
   box.hidden=false;imp.hidden=true;
-  box.innerHTML=`<b>📋 Mon service${SVC.num?' n° '+esc(SVC.num):''}</b><div class="dayrow"><button class="btn ghost" id="svPrev" type="button" aria-label="Jour précédent">‹</button><span>${esc(dayLabel(day))}</span><button class="btn ghost" id="svNext" type="button" aria-label="Jour suivant">›</button></div>`+
+  box.innerHTML=`<div class="svhead"><b>📋 Mon service${SVC.num?' n° '+esc(SVC.num):''}</b><button class="btn ghost svx" id="svClose" type="button">✕ Retirer</button></div><div class="dayrow"><button class="btn ghost" id="svPrev" type="button" aria-label="Jour précédent">‹</button><span>${esc(dayLabel(day))}</span><button class="btn ghost" id="svNext" type="button" aria-label="Jour suivant">›</button></div>`+
     `<span class="note">${SVC.parts?'Service en '+SVC.parts.length+' parties : '+esc(SVC.parts.join(' + '))+' · ':(SVC.prise?'Prise '+esc(SVC.prise)+' · ':'')+(SVC.fin?'remise '+esc(SVC.fin)+' · ':'')}${SVC.periode?esc(SVC.periode)+' · ':''}${SVC.from?'valable dès le '+esc(SVC.from.slice(8,10)+'/'+SVC.from.slice(5,7))+' · ':''}${nc} courses${nd?` dont <b>${nd} en déviation</b>`:', aucune en déviation'}</span>${ban}${rowsH}`+
     `<div class="acts"><button class="btn ghost" id="svAll" type="button">Copier toute la liste</button><button class="btn ghost" id="svNew" type="button">Autre feuille</button></div><span class="note" style="font-size:12px">Feuille lue sur ce téléphone et gardée ici seulement. Ton ordre de marche papier prime.</span>`}
 function svcText(){const R=svcRows(SVC,SVD);return [`Mon service${SVC.num?' n° '+SVC.num:''} – ${dayLabel(SVD)}`].concat(R.map(({c,r,hlp})=>{
   if(hlp)return `${c.dep} à vide ${c.from} → ${c.to} : ${hlp.file?hlp.folder+' › '+hlp.file:'pas de fichier'}`;if(r.err)return `${c.dep} ligne ${c.ln} : ${r.err}`;
   const dv=((DATA.dev&&DATA.dev[r.code])||[]).filter(x=>winOn(x,SVD));const qd_=quaiOf(r.v.stops[0][0]);return `${c.dep} ligne ${r.ln} ${shortName(r.v.from)} → ${shortName(r.v.to)}${qd_?' (quai '+qd_.q+')':''} : ${dv.length?'DÉVIATION › Deviations › '+dv[0].file:'Ligne_'+r.ln+' › '+r.v.file}`})).join('\n')}
 $('svc').addEventListener('click',async e=>{const b=e.target.closest('button');if(!b)return;
+  if(b.id==='svClose'){SVC=null;store.set(SVK,'');renderSvc();return}
   if(b.id==='svPrev'){SVD=addDay(SVD,-1);renderSvc();return}
   if(b.id==='svNext'){SVD=addDay(SVD,1);renderSvc();return}
   if(b.id==='svFit'){SVD=b.dataset.d;renderSvc();return}
