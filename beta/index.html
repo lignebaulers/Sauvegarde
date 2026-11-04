@@ -382,6 +382,13 @@ body.site .svc code{display:none}
 .trail .crumbs{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px}
 .trail .crumb{flex:0 1 auto;max-width:100%;font-size:15px;padding:6px 12px}
 .homebar .back{height:50px;padding:0 20px}
+
+/* r61f : vignettes des photos du signalement */
+.rprev{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}
+.rprev[hidden]{display:none}
+.rth{position:relative}
+.rth img{width:100%;height:110px;object-fit:cover;border-radius:10px;border:1px solid var(--line);background:var(--surface);display:block;max-height:none}
+.rdel{position:absolute;top:4px;right:4px;width:34px;height:34px;border-radius:50%;border:0;background:rgba(0,0,0,.65);color:#fff;font-size:17px;font-weight:700;line-height:1}
 </style>
 
 <div class="wrap">
@@ -708,8 +715,8 @@ En cas d&#x27;erreur dans l&#x27;appli : prévenir le collègue qui la tient à 
     </div>
     <p class="lbl">En deux mots <small>(facultatif)</small></p>
     <textarea class="rtxt" id="repTxt" placeholder="Ex. : la déviation est finie, on repasse par la rue de Namur"></textarea>
-    <label class="btn ghost wide rphoto" id="repPick">📷 Ajouter une photo ou une capture <small>(facultatif)</small><input type="file" id="repFile" accept="image/*" hidden></label>
-    <div class="rprev" id="repPrev" hidden><img id="repImg" alt="Photo jointe"><button class="btn ghost" id="repDel" type="button">✕ Retirer la photo</button></div>
+    <div class="rprev" id="repPrev" hidden></div>
+    <label class="btn ghost wide rphoto" id="repPick">📷 Ajouter des photos ou captures <small id="repPickN">(facultatif, 3 maximum)</small><input type="file" id="repFile" accept="image/*" multiple hidden></label>
     <label class="rchk"><input type="checkbox" id="repGps"><span>📍 Joindre ma position actuelle</span></label>
     <button class="btn big" id="repSend" type="button">Envoyer le signalement</button>
     <p class="msg" id="repMsg"></p>
@@ -1792,40 +1799,48 @@ function renderAvis(){const q=($('aq').value||'').trim(),Q=q.toUpperCase(),d=tod
 $('aq').oninput=renderAvis;
 $('aList').addEventListener('click',e=>{const b=e.target.closest('.lchip');if(b&&DATA.lines[b.dataset.l])pickLine(b.dataset.l)});
 document.querySelector('.girouette').addEventListener('click',()=>{if(S.step!==1)$('restart').click()});
-/* ---------- Signaler une erreur : formulaire dans l'appli, envoi anonyme (Google Forms), file d'attente hors ligne ---------- */
-const FORM={url:'',f:{ligne:'',jour:'',type:'',details:'',gps:'',photo:['','','','']}}; /* à brancher : lien prérempli du formulaire */
-const REP={photo:'',gps:''};const REPQ='repQ';const CH=45000;
+/* ---------- Signaler une erreur : formulaire dans l'appli, envoi anonyme au relais (Apps Script → Drive), photos, file d'attente hors ligne ---------- */
+const RELAY=''; /* adresse « /exec » du relais Apps Script : vide = démonstration (essai) ou bouton caché (site) */
+const REP={photos:[],gps:''};const REPQ='repQ2';const MAXP=3;let REPMEM=[];
 function openReport(ctx){S.repBack=S.step;$('repWhere').value=ctx||'';$('repTxt').value='';document.querySelectorAll('#repType input').forEach(i=>i.checked=false);
-  REP.photo='';REP.gps='';$('repPrev').hidden=true;$('repPick').hidden=false;$('repGps').checked=false;$('repMsg').textContent='';$('repSend').disabled=false;go(9)}
+  REP.photos=[];REP.gps='';repThumbs();$('repGps').checked=false;$('repMsg').textContent='';$('repSend').disabled=false;go(9)}
 function shrink(file){return new Promise((ok,ko)=>{const u=URL.createObjectURL(file),im=new Image();
-  im.onload=()=>{URL.revokeObjectURL(u);for(const M of [1000,800,640,480]){let w=im.naturalWidth,h=im.naturalHeight;const k=Math.min(1,M/Math.max(w,h));w=Math.round(w*k);h=Math.round(h*k);
+  im.onload=()=>{URL.revokeObjectURL(u);for(const M of [1800,1500,1200,1000]){let w=im.naturalWidth,h=im.naturalHeight;const k=Math.min(1,M/Math.max(w,h));w=Math.round(w*k);h=Math.round(h*k);
       const c=document.createElement('canvas');c.width=w;c.height=h;const g=c.getContext('2d');g.fillStyle='#fff';g.fillRect(0,0,w,h);g.drawImage(im,0,0,w,h);
-      for(let q=.72;q>.3;q-=.1){const d=c.toDataURL('image/jpeg',q);if(d.length<=CH*4)return ok(d)}}ko(new Error('photo trop lourde'))};
+      for(let q=.8;q>.45;q-=.1){const d=c.toDataURL('image/jpeg',q);if(d.length<=1e6)return ok(d)}}ko(new Error('photo trop lourde'))};
   im.onerror=()=>{URL.revokeObjectURL(u);ko(new Error('image illisible'))};im.src=u})}
-$('repFile').onchange=async e=>{const f=e.target.files&&e.target.files[0];e.target.value='';if(!f)return;$('repMsg').textContent='Préparation de la photo…';
-  try{REP.photo=await shrink(f);$('repImg').src=REP.photo;$('repPrev').hidden=false;$('repPick').hidden=true;$('repMsg').textContent=''}catch(x){$('repMsg').textContent='Photo impossible : '+x.message}};
-$('repDel').onclick=()=>{REP.photo='';$('repPrev').hidden=true;$('repPick').hidden=false};
+function repThumbs(){const b=$('repPrev');b.innerHTML=REP.photos.map((p,i)=>`<div class="rth"><img src="${p}" alt="Photo ${i+1}"><button class="rdel" type="button" data-i="${i}" aria-label="Retirer la photo ${i+1}">✕</button></div>`).join('');
+  b.hidden=!REP.photos.length;$('repPick').hidden=REP.photos.length>=MAXP;$('repPickN').textContent=REP.photos.length?`(encore ${MAXP-REP.photos.length})`:'(facultatif, 3 maximum)'}
+$('repFile').onchange=async e=>{const fs=[...(e.target.files||[])];e.target.value='';if(!fs.length)return;$('repMsg').textContent='Préparation des photos…';let trop=false;
+  try{for(const f of fs){if(REP.photos.length>=MAXP){trop=true;break}REP.photos.push(await shrink(f));repThumbs()}$('repMsg').textContent=trop?'3 photos maximum : les autres n\'ont pas été ajoutées.':''}
+  catch(x){$('repMsg').textContent='Photo impossible : '+x.message}repThumbs()};
+$('repPrev').addEventListener('click',e=>{const b=e.target.closest('.rdel');if(!b)return;REP.photos.splice(+b.dataset.i,1);repThumbs()});
 $('repGps').onchange=e=>{if(!e.target.checked){REP.gps='';return}if(!navigator.geolocation){$('repMsg').textContent='Position indisponible sur ce téléphone.';e.target.checked=false;return}
   $('repMsg').textContent='Recherche de la position…';navigator.geolocation.getCurrentPosition(p=>{REP.gps=p.coords.latitude.toFixed(5)+','+p.coords.longitude.toFixed(5)+' (±'+Math.round(p.coords.accuracy)+' m)';$('repMsg').textContent='📍 Position ajoutée.'},
     ()=>{e.target.checked=false;REP.gps='';$('repMsg').textContent='Position refusée ou introuvable : envoie sans.'},{enableHighAccuracy:true,timeout:15000,maximumAge:60000})};
-function repQ(){try{return JSON.parse(store.get(REPQ)||'[]')}catch(e){return []}}
-async function repPost(r){const F=FORM.f,b=new URLSearchParams();const put=(k,v)=>{if(k&&v)b.append(k,v)};
-  put(F.ligne,r.ligne);put(F.jour,r.jour);put(F.type,r.type);put(F.details,r.details);put(F.gps,r.gps);F.photo.forEach((k,i)=>put(k,(r.photo||'').slice(i*CH,(i+1)*CH)));
-  await fetch(FORM.url,{method:'POST',mode:'no-cors',body:b})}
-async function repFlush(){if(!FORM.url||!navigator.onLine)return 0;const Q=repQ();let n=0;while(Q.length){try{await repPost(Q[0]);Q.shift();n++;store.set(REPQ,JSON.stringify(Q))}catch(e){break}}return n}
+function repQ(){try{return JSON.parse(localStorage.getItem(REPQ)||'[]')}catch(e){return []}}
+function repSave(Q){try{localStorage.setItem(REPQ,JSON.stringify(Q));return true}catch(e){return false}}
+async function repPost(r){const body=JSON.stringify(r);
+  try{const res=await fetch(RELAY,{method:'POST',body});const j=await res.json();if(j&&j.ok)return true;throw new Error((j&&j.err)||'refusé par le relais')}
+  catch(e){if(e instanceof TypeError||e instanceof SyntaxError){await fetch(RELAY,{method:'POST',mode:'no-cors',body});return true}throw e}}
+let REPBUSY=false;
+async function repFlush(){if(!RELAY||!navigator.onLine||REPBUSY)return 0;REPBUSY=true;const Q=repQ().concat(REPMEM);REPMEM=[];let n=0;
+  while(Q.length){try{await repPost(Q[0]);Q.shift();n++}catch(e){break}}
+  if(repSave(Q))REPMEM=[];else{repSave([]);REPMEM=Q}REPBUSY=false;return n}
 $('repSend').onclick=async()=>{const t=(document.querySelector('#repType input:checked')||{}).value||'';const w=$('repWhere').value.trim(),d=$('repTxt').value.trim();
-  if(!t&&!d&&!REP.photo){$('repMsg').textContent='Choisis au moins le problème, ou écris deux mots.';return}
-  const r={ligne:w,jour:new Date().toISOString().slice(0,16).replace('T',' ')+' · appli '+(window.__LB_VER__||'artefact'),type:t,details:d,gps:REP.gps,photo:REP.photo};
-  $('repSend').disabled=true;
-  if(!FORM.url){$('repMsg').innerHTML='✅ <b>Démonstration</b> : le formulaire n\'est pas encore branché, rien n\'est parti.<br>Aurait été envoyé : '+esc([w,t,d].filter(Boolean).join(' · '))+(REP.gps?' · 📍':'')+(REP.photo?' · 📷 photo ('+Math.round(REP.photo.length*3/4/1024)+' Ko)':'');$('repSend').disabled=false;return}
-  const Q=repQ();Q.push(r);try{store.set(REPQ,JSON.stringify(Q))}catch(e){}
+  if(!t&&!d&&!REP.photos.length){$('repMsg').textContent='Choisis au moins le problème, ou écris deux mots.';return}
+  const r={id:Date.now().toString(36)+Math.random().toString(36).slice(2,8),ligne:w,type:t,details:d,gps:REP.gps,photos:REP.photos.slice(),
+    app:'appli '+(window.__LB_VER__||'artefact')+' · '+new Date().toLocaleString('fr-BE')};
+  const np=r.photos.length,ko=Math.round(r.photos.reduce((s,p)=>s+p.length*3/4,0)/1024);
+  if(!RELAY){$('repMsg').innerHTML='✅ <b>Démonstration</b> : le relais n\'est pas encore branché, rien n\'est parti.<br>Aurait été envoyé : '+esc([w,t,d].filter(Boolean).join(' · '))+(REP.gps?' · 📍':'')+(np?` · 📷 ${np} photo${np>1?'s':''} (${ko} Ko)`:'');return}
+  $('repSend').disabled=true;const Q=repQ();Q.push(r);if(!repSave(Q))REPMEM.push(r);
   if(!navigator.onLine){$('repMsg').textContent='📴 Pas de réseau : le signalement est gardé et partira tout seul dès que le réseau revient.';return}
-  $('repMsg').textContent='Envoi…';const n=await repFlush();
-  $('repMsg').textContent=n?'✅ Merci ! Le signalement est parti. Il sera vérifié au tableau avant toute correction.':'📴 Envoi impossible pour l\'instant : il est gardé et repartira tout seul.'};
+  $('repMsg').textContent='Envoi…'+(np?' (photos : quelques secondes)':'');const n=await repFlush();
+  $('repMsg').textContent=n?`✅ Merci ! Le signalement est parti${np?` avec ${np} photo${np>1?'s':''}`:''}. Il sera vérifié au tableau avant toute correction.`:'📴 Envoi impossible pour l\'instant : il est gardé et repartira tout seul.'};
 $('repCancel').onclick=()=>go(S.repBack!=null&&S.repBack!==9?S.repBack:1);
 document.addEventListener('click',e=>{const b=e.target.closest('[data-rep]');if(!b)return;e.preventDefault();e.stopPropagation();openReport(b.dataset.rep)},true);
 addEventListener('online',()=>repFlush());setTimeout(()=>repFlush(),3000);
-document.body.classList.toggle('norep',!FORM.url&&!window.__LB_BETA__); /* signalement caché tant que le formulaire n'est pas branché (visible dans l'essai) */
+document.body.classList.toggle('norep',!RELAY&&!window.__LB_BETA__); /* signalement caché tant que le relais n'est pas branché (visible dans l'essai) */
 /* ---------- Événements ---------- */
 $('q').oninput=renderLines;
 $('q').onkeydown=e=>{if(e.key==='Enter'){const q=$('q').value.trim().toUpperCase();const m=DATA.index.lines.find(l=>l.line.toUpperCase()===q);if(m)pickLine(m.line)}};
