@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Guidage lignes TEC" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net">
-<metadata><name>L39_01_DEV_1063_2008</name><desc>Avis 2008 : déviation après « WATERLOO Calvaire », retour au parcours normal avant « BRAINE-L'ALLEUD La Chapelle » | Avis 1063 : déviation après « LASNE Champ des Vignes », retour au parcours normal avant « CEROUX Place Communale » || Avis 1063 : Ligne 39 vers Lasne : même déviation que la 29 (par Céroux-Mousty, route de Maransart) pour rejoindre l'itinéraire normal au rond-point de Lasne. Vers Ottignies : même itinéraire en sens inverse. Arrêts supprimés : Rue Grand Chemin, Rue des Tiennes, Habitation 54, Place de Renival, Lasne Village (39 vers Ottignies). Arrêts temporaires en face de : Fond Agny, Rue du Réservoir, Rue E. François, Mont Cornet, Collinet, Centre Sportif, Maison Communale + arrêts de la 36 Aywiers, Couture, Petit Champ. | Avis 2008 : Ligne 39 vers Braine-l'Alleud : au rond-point de Mont-Saint-Pont, tout droit chaussée de Tubize, directement à gauche rue du Moulin à Aubes, tout droit puis 1re à gauche (devant le Delhaize) ; au bout de la rue de la Graignette, à droite vers la chaussée d'Alsemberg (itinéraire normal). Depuis Braine-l'Alleud : pas de déviation.</desc></metadata>
+<metadata><name>L39_01_DEV_1063</name><desc>Avis 1063 : déviation après « LASNE Champ des Vignes », retour au parcours normal avant « CEROUX Place Communale » || Avis 1063 : Ligne 39 vers Lasne : même déviation que la 29 (par Céroux-Mousty, route de Maransart) pour rejoindre l'itinéraire normal au rond-point de Lasne. Vers Ottignies : même itinéraire en sens inverse. Arrêts supprimés : Rue Grand Chemin, Rue des Tiennes, Habitation 54, Place de Renival, Lasne Village (39 vers Ottignies). Arrêts temporaires en face de : Fond Agny, Rue du Réservoir, Rue E. François, Mont Cornet, Collinet, Centre Sportif, Maison Communale + arrêts de la 36 Aywiers, Couture, Petit Champ.</desc></metadata>
 <wpt lat="50.714709" lon="4.383621"><name>01 WATERLOO Place de la Gare</name><type>Arrêts déviation</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
 <wpt lat="50.716072" lon="4.389853"><name>02 WATERLOO Athénée</name><type>Arrêts déviation</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
 <wpt lat="50.715297" lon="4.396661"><name>03 WATERLOO Maison Communale</name><type>Arrêts déviation</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
@@ -47,11 +47,9 @@
 <wpt lat="50.672183" lon="4.572136"><name>44 OTTIGNIES Gare - Av. Droits de l'Homme</name><type>Arrêts déviation</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
 <wpt lat="50.659513" lon="4.615814"><name>45 LOUVAIN-LA-NEUVE Parc d'Affaires (Bd Baudouin Ier)</name><type>Arrêts déviation</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
 <wpt lat="50.667811" lon="4.613117"><name>46 LOUVAIN-LA-NEUVE Gare d'Autobus - Quai 4</name><type>Arrêts déviation</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
-<wpt lat="50.699570" lon="4.361920"><name>▶ DÉBUT DÉVIATION – avis 2008 (après WATERLOO Calvaire)</name><type>Début / fin de déviation</type><extensions><osmand:icon>special_flag_start</osmand:icon><osmand:background>square</osmand:background><osmand:color>#9c27b0</osmand:color></extensions></wpt>
-<wpt lat="50.697840" lon="4.363340"><name>◀ FIN DÉVIATION – avis 2008 : itinéraire normal (vers BRAINE-L'ALLEUD La Chapelle)</name><type>Début / fin de déviation</type><extensions><osmand:icon>special_flag_finish</osmand:icon><osmand:background>square</osmand:background><osmand:color>#9c27b0</osmand:color></extensions></wpt>
 <wpt lat="50.684687" lon="4.482785"><name>▶ DÉBUT DÉVIATION – avis 1063 (après LASNE Champ des Vignes)</name><type>Début / fin de déviation</type><extensions><osmand:icon>special_flag_start</osmand:icon><osmand:background>square</osmand:background><osmand:color>#9c27b0</osmand:color></extensions></wpt>
 <wpt lat="50.659813" lon="4.513289"><name>◀ FIN DÉVIATION – avis 1063 : itinéraire normal (vers CEROUX Place Communale)</name><type>Début / fin de déviation</type><extensions><osmand:icon>special_flag_finish</osmand:icon><osmand:background>square</osmand:background><osmand:color>#9c27b0</osmand:color></extensions></wpt>
-<trk><name>L39_01_DEV_1063_2008</name><desc>Avis 2008 : déviation après « WATERLOO Calvaire », retour au parcours normal avant « BRAINE-L'ALLEUD La Chapelle » | Avis 1063 : déviation après « LASNE Champ des Vignes », retour au parcours normal avant « CEROUX Place Communale » || Avis 1063 : Ligne 39 vers Lasne : même déviation que la 29 (par Céroux-Mousty, route de Maransart) pour rejoindre l'itinéraire normal au rond-point de Lasne. Vers Ottignies : même itinéraire en sens inverse. Arrêts supprimés : Rue Grand Chemin, Rue des Tiennes, Habitation 54, Place de Renival, Lasne Village (39 vers Ottignies). Arrêts temporaires en face de : Fond Agny, Rue du Réservoir, Rue E. François, Mont Cornet, Collinet, Centre Sportif, Maison Communale + arrêts de la 36 Aywiers, Couture, Petit Champ. | Avis 2008 : Ligne 39 vers Braine-l'Alleud : au rond-point de Mont-Saint-Pont, tout droit chaussée de Tubize, directement à gauche rue du Moulin à Aubes, tout droit puis 1re à gauche (devant le Delhaize) ; au bout de la rue de la Graignette, à droite vers la chaussée d'Alsemberg (itinéraire normal). Depuis Braine-l'Alleud : pas de déviation.</desc><extensions><osmand:color>#9c27b0</osmand:color></extensions><trkseg>
+<trk><name>L39_01_DEV_1063</name><desc>Avis 1063 : déviation après « LASNE Champ des Vignes », retour au parcours normal avant « CEROUX Place Communale » || Avis 1063 : Ligne 39 vers Lasne : même déviation que la 29 (par Céroux-Mousty, route de Maransart) pour rejoindre l'itinéraire normal au rond-point de Lasne. Vers Ottignies : même itinéraire en sens inverse. Arrêts supprimés : Rue Grand Chemin, Rue des Tiennes, Habitation 54, Place de Renival, Lasne Village (39 vers Ottignies). Arrêts temporaires en face de : Fond Agny, Rue du Réservoir, Rue E. François, Mont Cornet, Collinet, Centre Sportif, Maison Communale + arrêts de la 36 Aywiers, Couture, Petit Champ.</desc><extensions><osmand:color>#9c27b0</osmand:color></extensions><trkseg>
 <trkpt lat="50.714707" lon="4.383670"/>
 <trkpt lat="50.714617" lon="4.383659"/>
 <trkpt lat="50.714593" lon="4.383666"/>
@@ -263,52 +261,21 @@
 <trkpt lat="50.699657" lon="4.362060"/>
 <trkpt lat="50.699628" lon="4.361998"/>
 <trkpt lat="50.699570" lon="4.361920"/>
-<trkpt lat="50.699500" lon="4.361840"/>
-<trkpt lat="50.699480" lon="4.361810"/>
-<trkpt lat="50.699440" lon="4.361720"/>
-<trkpt lat="50.699320" lon="4.361250"/>
-<trkpt lat="50.699030" lon="4.360020"/>
-<trkpt lat="50.698970" lon="4.359890"/>
-<trkpt lat="50.698960" lon="4.359820"/>
-<trkpt lat="50.698910" lon="4.359880"/>
-<trkpt lat="50.698880" lon="4.359910"/>
-<trkpt lat="50.698710" lon="4.360130"/>
-<trkpt lat="50.698580" lon="4.360230"/>
-<trkpt lat="50.698440" lon="4.360310"/>
-<trkpt lat="50.698460" lon="4.360420"/>
-<trkpt lat="50.698470" lon="4.360510"/>
-<trkpt lat="50.698490" lon="4.360600"/>
-<trkpt lat="50.698490" lon="4.360610"/>
-<trkpt lat="50.698550" lon="4.360770"/>
-<trkpt lat="50.698570" lon="4.360830"/>
-<trkpt lat="50.698650" lon="4.361010"/>
-<trkpt lat="50.698670" lon="4.361040"/>
-<trkpt lat="50.698670" lon="4.361060"/>
-<trkpt lat="50.698740" lon="4.361190"/>
-<trkpt lat="50.698860" lon="4.361340"/>
-<trkpt lat="50.698920" lon="4.361390"/>
-<trkpt lat="50.698960" lon="4.361420"/>
-<trkpt lat="50.699090" lon="4.361450"/>
-<trkpt lat="50.699230" lon="4.361460"/>
-<trkpt lat="50.699300" lon="4.361460"/>
-<trkpt lat="50.699310" lon="4.361520"/>
-<trkpt lat="50.699330" lon="4.361680"/>
-<trkpt lat="50.699360" lon="4.361850"/>
-<trkpt lat="50.699350" lon="4.362010"/>
-<trkpt lat="50.699340" lon="4.362090"/>
-<trkpt lat="50.699330" lon="4.362140"/>
-<trkpt lat="50.699280" lon="4.362240"/>
-<trkpt lat="50.699240" lon="4.362300"/>
-<trkpt lat="50.699180" lon="4.362360"/>
-<trkpt lat="50.699120" lon="4.362440"/>
-<trkpt lat="50.699010" lon="4.362500"/>
-<trkpt lat="50.698780" lon="4.362660"/>
-<trkpt lat="50.698640" lon="4.362750"/>
-<trkpt lat="50.698590" lon="4.362800"/>
-<trkpt lat="50.698540" lon="4.362860"/>
-<trkpt lat="50.698520" lon="4.362870"/>
-<trkpt lat="50.698220" lon="4.363070"/>
-<trkpt lat="50.698010" lon="4.363210"/>
+<trkpt lat="50.699534" lon="4.361936"/>
+<trkpt lat="50.699486" lon="4.361954"/>
+<trkpt lat="50.699446" lon="4.361995"/>
+<trkpt lat="50.699420" lon="4.362059"/>
+<trkpt lat="50.699414" lon="4.362101"/>
+<trkpt lat="50.699409" lon="4.362138"/>
+<trkpt lat="50.699411" lon="4.362168"/>
+<trkpt lat="50.699418" lon="4.362219"/>
+<trkpt lat="50.699352" lon="4.362276"/>
+<trkpt lat="50.699129" lon="4.362410"/>
+<trkpt lat="50.698950" lon="4.362528"/>
+<trkpt lat="50.698950" lon="4.362528"/>
+<trkpt lat="50.698801" lon="4.362625"/>
+<trkpt lat="50.698401" lon="4.362891"/>
+<trkpt lat="50.698036" lon="4.363132"/>
 <trkpt lat="50.697840" lon="4.363340"/>
 <trkpt lat="50.697757" lon="4.363325"/>
 <trkpt lat="50.697723" lon="4.363354"/>

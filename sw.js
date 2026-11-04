@@ -1,5 +1,5 @@
 /* Lignes Baulers – hors ligne : réseau d'abord (3,5 s max), sinon version gardée sur le téléphone. */
-const V='lb-82f07ee1e0';
+const V='lb-0e8b2e9f28';
 const CORE=['./','index.html','jszip.min.js','pdf.min.js','pdf.worker.min.js','manifest.webmanifest','icon-180.png','icon-192.png','icon-512.png','TEC_Baulers_sauvegarde.osf'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(V).then(c=>c.addAll(CORE.map(u=>new Request(u,{cache:'reload'})))).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k.startsWith('lb-')&&k!==V&&k!=='lb-fonts').map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
