@@ -1,27 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Guidage lignes TEC" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net">
-<metadata><name>Braine-L-Alleud-Gare-Av-Albert-Ier_vers_Depot</name><desc>Retour au dépôt depuis l'avenue Albert Ier (quais 9 et 10 : W, 36) : boucle de départ de la W, avenue Albert Ier vers le nord, Pont Courbe, place de la Gare, rue des Croix de Feu, boulevard de l'Alliance, route de Piraumont, chaussée de Nivelles puis Grand'Route (N27) tout droit. Chaussée de Bruxelles (N27) jusqu'à Baulers, puis à droite dans l'accès du dépôt (l'entrée, pas la sortie de l'avenue de l'Europe). Calculé sur le réseau routier (sens de circulation respectés) et sur le parcours de lignes TEC : pas encore roulé, à confirmer.</desc></metadata>
+<metadata><name>Braine-L-Alleud-Gare-Av-Albert-Ier_vers_Depot</name><desc>Retour au dépôt depuis l'avenue Albert Ier (quais 9 et 10 : W, 36) : avenue Albert Ier tout droit, demi-tour au rond-point, avenue Albert Ier vers le nord, Pont Courbe, place de la Gare, rue des Croix de Feu, boulevard de l'Alliance, route de Piraumont, chaussée de Nivelles puis Grand'Route (N27) tout droit. Chaussée de Bruxelles (N27) jusqu'à Baulers, puis à droite dans l'accès du dépôt (l'entrée, pas la sortie de l'avenue de l'Europe). Calculé sur le réseau routier (sens de circulation respectés) et sur le parcours de lignes TEC : pas encore roulé, à confirmer. – début refait le 05/11/2026 (signalé par un chauffeur de la W) : du quai 10, tout droit av. Albert Ier, demi-tour au rond-point, puis vers le nord jusqu'à « Ancienne Station » ; remplace le tour rue de la Croix / av. de Basingstoke / av. Général Ruquoy du tracé TEC ; itinéraire calculé, à confirmer par un enregistrement</desc></metadata>
 <wpt lat="50.683092" lon="4.376115"><name>Départ : BRAINE-L'ALLEUD Gare quai 9 / 10 (av. Albert Ier)</name><type>Dépôt</type><extensions><osmand:icon>special_flag_start</osmand:icon><osmand:color>#0b6e65</osmand:color></extensions></wpt>
 <wpt lat="50.685520" lon="4.376920"><name>Rond-point : à gauche Pont Courbe (au-dessus des voies)</name><type>Dépôt</type><extensions><osmand:icon>special_arrow_left</osmand:icon><osmand:color>#0b6e65</osmand:color></extensions></wpt>
 <wpt lat="50.611513" lon="4.337487"><name>À droite : accès du dépôt (entrée, pas la sortie)</name><type>Dépôt</type><extensions><osmand:icon>special_arrow_right</osmand:icon><osmand:color>#0b6e65</osmand:color></extensions></wpt>
 <wpt lat="50.612950" lon="4.336790"><name>Arrivée : dépôt de Baulers</name><type>Dépôt</type><extensions><osmand:icon>special_flag_finish</osmand:icon><osmand:color>#0b6e65</osmand:color></extensions></wpt>
-<trk><name>Braine-L-Alleud-Gare-Av-Albert-Ier_vers_Depot</name><desc>Retour au dépôt depuis l'avenue Albert Ier (quais 9 et 10 : W, 36) : boucle de départ de la W, avenue Albert Ier vers le nord, Pont Courbe, place de la Gare, rue des Croix de Feu, boulevard de l'Alliance, route de Piraumont, chaussée de Nivelles puis Grand'Route (N27) tout droit. Chaussée de Bruxelles (N27) jusqu'à Baulers, puis à droite dans l'accès du dépôt (l'entrée, pas la sortie de l'avenue de l'Europe). Calculé sur le réseau routier (sens de circulation respectés) et sur le parcours de lignes TEC : pas encore roulé, à confirmer.</desc><extensions><osmand:color>#0b6e65</osmand:color></extensions><trkseg>
-<trkpt lat="50.683092" lon="4.376115"/>
-<trkpt lat="50.682964" lon="4.376085"/>
-<trkpt lat="50.682570" lon="4.378254"/>
-<trkpt lat="50.682653" lon="4.378515"/>
-<trkpt lat="50.683119" lon="4.378104"/>
-<trkpt lat="50.683360" lon="4.377905"/>
-<trkpt lat="50.683481" lon="4.377841"/>
-<trkpt lat="50.683580" lon="4.377796"/>
-<trkpt lat="50.683682" lon="4.377779"/>
-<trkpt lat="50.683800" lon="4.377779"/>
-<trkpt lat="50.683934" lon="4.377779"/>
-<trkpt lat="50.684006" lon="4.376513"/>
-<trkpt lat="50.684119" lon="4.376547"/>
+<trk><name>Braine-L-Alleud-Gare-Av-Albert-Ier_vers_Depot</name><desc>Retour au dépôt depuis l'avenue Albert Ier (quais 9 et 10 : W, 36) : avenue Albert Ier tout droit, demi-tour au rond-point, avenue Albert Ier vers le nord, Pont Courbe, place de la Gare, rue des Croix de Feu, boulevard de l'Alliance, route de Piraumont, chaussée de Nivelles puis Grand'Route (N27) tout droit. Chaussée de Bruxelles (N27) jusqu'à Baulers, puis à droite dans l'accès du dépôt (l'entrée, pas la sortie de l'avenue de l'Europe). Calculé sur le réseau routier (sens de circulation respectés) et sur le parcours de lignes TEC : pas encore roulé, à confirmer. – début refait le 05/11/2026 (signalé par un chauffeur de la W) : du quai 10, tout droit av. Albert Ier, demi-tour au rond-point, puis vers le nord jusqu'à « Ancienne Station » ; remplace le tour rue de la Croix / av. de Basingstoke / av. Général Ruquoy du tracé TEC ; itinéraire calculé, à confirmer par un enregistrement</desc><extensions><osmand:color>#0b6e65</osmand:color></extensions><trkseg>
+<trkpt lat="50.683090" lon="4.376130"/>
+<trkpt lat="50.683050" lon="4.376120"/>
+<trkpt lat="50.683040" lon="4.376120"/>
+<trkpt lat="50.682980" lon="4.376100"/>
+<trkpt lat="50.682880" lon="4.376080"/>
+<trkpt lat="50.682870" lon="4.376080"/>
+<trkpt lat="50.682440" lon="4.375990"/>
+<trkpt lat="50.682380" lon="4.375970"/>
+<trkpt lat="50.682240" lon="4.375970"/>
+<trkpt lat="50.682220" lon="4.375950"/>
+<trkpt lat="50.682210" lon="4.375930"/>
+<trkpt lat="50.682200" lon="4.375930"/>
+<trkpt lat="50.682180" lon="4.375940"/>
+<trkpt lat="50.682170" lon="4.375950"/>
+<trkpt lat="50.682160" lon="4.375970"/>
+<trkpt lat="50.682150" lon="4.376000"/>
+<trkpt lat="50.682160" lon="4.376020"/>
+<trkpt lat="50.682170" lon="4.376050"/>
+<trkpt lat="50.682180" lon="4.376060"/>
+<trkpt lat="50.682200" lon="4.376060"/>
+<trkpt lat="50.682210" lon="4.376060"/>
+<trkpt lat="50.682230" lon="4.376040"/>
+<trkpt lat="50.682240" lon="4.376020"/>
+<trkpt lat="50.682240" lon="4.375990"/>
+<trkpt lat="50.682240" lon="4.375970"/>
+<trkpt lat="50.682380" lon="4.375970"/>
+<trkpt lat="50.682440" lon="4.375990"/>
+<trkpt lat="50.682870" lon="4.376080"/>
+<trkpt lat="50.682880" lon="4.376080"/>
+<trkpt lat="50.682980" lon="4.376100"/>
+<trkpt lat="50.683040" lon="4.376120"/>
+<trkpt lat="50.683050" lon="4.376120"/>
+<trkpt lat="50.683100" lon="4.376130"/>
+<trkpt lat="50.683130" lon="4.376140"/>
+<trkpt lat="50.683810" lon="4.376470"/>
+<trkpt lat="50.683940" lon="4.376530"/>
+<trkpt lat="50.684020" lon="4.376560"/>
 <trkpt lat="50.684110" lon="4.376590"/>
-<trkpt lat="50.684210" lon="4.376620"/>
+<trkpt lat="50.684180" lon="4.376610"/>
+<trkpt lat="50.684330" lon="4.376640"/>
 <trkpt lat="50.684370" lon="4.376650"/>
+<trkpt lat="50.684390" lon="4.376650"/>
 <trkpt lat="50.684550" lon="4.376690"/>
 <trkpt lat="50.684720" lon="4.376710"/>
 <trkpt lat="50.684780" lon="4.376710"/>

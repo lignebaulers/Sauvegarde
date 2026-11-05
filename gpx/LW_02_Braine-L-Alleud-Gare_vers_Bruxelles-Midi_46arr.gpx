@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Guidage lignes TEC" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net">
-<metadata><name>LW_02_Braine-L-Alleud-Gare_vers_Bruxelles-Midi_46arr</name><desc>Ligne W – BRAINE-L'ALLEUD Gare - Quai 10 (Av. Albert Ier) → BRUXELLES Midi – 46 arrêts – 21.8 km – départs : 05:30, 05:45, 06:00, 06:15, 06:22, 06:30, 06:32, 06:35, 06:45, 06:50, 06:51, 06:54, 07:00, 07:16, 07:30, 07:45, 08:00, 08:15, 08:25, 08:35, 08:45, 09:00, 09:15, 09:45, 10:00, 10:15, 10:45, 11:00, 11:15, 11:45, 12:00, 12:15, 12:35, 12:45, 12:55, 13:15, 13:45, 14:00, 14:15, 14:45, 15:00, 15:10, 15:15, 15:35, 15:45, 16:00, 16:15, 16:30, 16:45, 17:00, 17:15, 17:30, 17:45, 18:00, 18:15, 18:30, 18:45, 19:00, 19:30, 19:45, 20:15, 20:45, 21:15, 22:15</desc></metadata>
+<metadata><name>LW_02_Braine-L-Alleud-Gare_vers_Bruxelles-Midi_46arr</name><desc>Ligne W – BRAINE-L'ALLEUD Gare - Quai 10 (Av. Albert Ier) → BRUXELLES Midi – 46 arrêts – 21.7 km – départs : 05:30, 05:45, 06:00, 06:15, 06:22, 06:30, 06:32, 06:35, 06:45, 06:50, 06:51, 06:54, 07:00, 07:16, 07:30, 07:45, 08:00, 08:15, 08:25, 08:35, 08:45, 09:00, 09:15, 09:45, 10:00, 10:15, 10:45, 11:00, 11:15, 11:45, 12:00, 12:15, 12:35, 12:45, 12:55, 13:15, 13:45, 14:00, 14:15, 14:45, 15:00, 15:10, 15:15, 15:35, 15:45, 16:00, 16:15, 16:30, 16:45, 17:00, 17:15, 17:30, 17:45, 18:00, 18:15, 18:30, 18:45, 19:00, 19:30, 19:45, 20:15, 20:45, 21:15, 22:15</desc></metadata>
 <wpt lat="50.683099" lon="4.376050"><name>01 BRAINE-L'ALLEUD Gare - Quai 10 (Av. Albert Ier)</name><desc>Arrêt 1/46 – ligne W</desc><type>Arrêts ligne W</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
 <wpt lat="50.684977" lon="4.376735"><name>02 BRAINE-L'ALLEUD Ancienne Station</name><desc>Arrêt 2/46 – ligne W</desc><type>Arrêts ligne W</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
 <wpt lat="50.685569" lon="4.378183"><name>03 BRAINE-L'ALLEUD Vallée Bailly</name><desc>Arrêt 3/46 – ligne W</desc><type>Arrêts ligne W</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
@@ -47,21 +47,49 @@
 <wpt lat="50.832400" lon="4.345732"><name>44 SAINT-GILLES Porte de Hal Metro</name><desc>Arrêt 44/46 – ligne W</desc><type>Arrêts ligne W</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
 <wpt lat="50.833878" lon="4.343099"><name>45 SAINT-GILLES Porte de Hal Metro</name><desc>Arrêt 45/46 – ligne W</desc><type>Arrêts ligne W</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
 <wpt lat="50.836373" lon="4.338615"><name>46 BRUXELLES Midi</name><desc>Arrêt 46/46 – ligne W</desc><type>Arrêts ligne W</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
-<trk><name>LW_02_Braine-L-Alleud-Gare_vers_Bruxelles-Midi_46arr</name><desc>Ligne W – BRAINE-L'ALLEUD Gare - Quai 10 (Av. Albert Ier) → BRUXELLES Midi – 46 arrêts – 21.8 km – départs : 05:30, 05:45, 06:00, 06:15, 06:22, 06:30, 06:32, 06:35, 06:45, 06:50, 06:51, 06:54, 07:00, 07:16, 07:30, 07:45, 08:00, 08:15, 08:25, 08:35, 08:45, 09:00, 09:15, 09:45, 10:00, 10:15, 10:45, 11:00, 11:15, 11:45, 12:00, 12:15, 12:35, 12:45, 12:55, 13:15, 13:45, 14:00, 14:15, 14:45, 15:00, 15:10, 15:15, 15:35, 15:45, 16:00, 16:15, 16:30, 16:45, 17:00, 17:15, 17:30, 17:45, 18:00, 18:15, 18:30, 18:45, 19:00, 19:30, 19:45, 20:15, 20:45, 21:15, 22:15</desc><trkseg>
-<trkpt lat="50.683092" lon="4.376115"/>
-<trkpt lat="50.682964" lon="4.376085"/>
-<trkpt lat="50.682570" lon="4.378254"/>
-<trkpt lat="50.682653" lon="4.378515"/>
-<trkpt lat="50.683119" lon="4.378104"/>
-<trkpt lat="50.683360" lon="4.377905"/>
-<trkpt lat="50.683481" lon="4.377841"/>
-<trkpt lat="50.683580" lon="4.377796"/>
-<trkpt lat="50.683682" lon="4.377779"/>
-<trkpt lat="50.683800" lon="4.377779"/>
-<trkpt lat="50.683934" lon="4.377779"/>
-<trkpt lat="50.684006" lon="4.376513"/>
-<trkpt lat="50.684120" lon="4.376547"/>
-<trkpt lat="50.684300" lon="4.376575"/>
+<trk><name>LW_02_Braine-L-Alleud-Gare_vers_Bruxelles-Midi_46arr</name><desc>Ligne W – BRAINE-L'ALLEUD Gare - Quai 10 (Av. Albert Ier) → BRUXELLES Midi – 46 arrêts – 21.7 km – départs : 05:30, 05:45, 06:00, 06:15, 06:22, 06:30, 06:32, 06:35, 06:45, 06:50, 06:51, 06:54, 07:00, 07:16, 07:30, 07:45, 08:00, 08:15, 08:25, 08:35, 08:45, 09:00, 09:15, 09:45, 10:00, 10:15, 10:45, 11:00, 11:15, 11:45, 12:00, 12:15, 12:35, 12:45, 12:55, 13:15, 13:45, 14:00, 14:15, 14:45, 15:00, 15:10, 15:15, 15:35, 15:45, 16:00, 16:15, 16:30, 16:45, 17:00, 17:15, 17:30, 17:45, 18:00, 18:15, 18:30, 18:45, 19:00, 19:30, 19:45, 20:15, 20:45, 21:15, 22:15</desc><trkseg>
+<trkpt lat="50.683090" lon="4.376130"/>
+<trkpt lat="50.683050" lon="4.376120"/>
+<trkpt lat="50.683040" lon="4.376120"/>
+<trkpt lat="50.682980" lon="4.376100"/>
+<trkpt lat="50.682880" lon="4.376080"/>
+<trkpt lat="50.682870" lon="4.376080"/>
+<trkpt lat="50.682440" lon="4.375990"/>
+<trkpt lat="50.682380" lon="4.375970"/>
+<trkpt lat="50.682240" lon="4.375970"/>
+<trkpt lat="50.682220" lon="4.375950"/>
+<trkpt lat="50.682210" lon="4.375930"/>
+<trkpt lat="50.682200" lon="4.375930"/>
+<trkpt lat="50.682180" lon="4.375940"/>
+<trkpt lat="50.682170" lon="4.375950"/>
+<trkpt lat="50.682160" lon="4.375970"/>
+<trkpt lat="50.682150" lon="4.376000"/>
+<trkpt lat="50.682160" lon="4.376020"/>
+<trkpt lat="50.682170" lon="4.376050"/>
+<trkpt lat="50.682180" lon="4.376060"/>
+<trkpt lat="50.682200" lon="4.376060"/>
+<trkpt lat="50.682210" lon="4.376060"/>
+<trkpt lat="50.682230" lon="4.376040"/>
+<trkpt lat="50.682240" lon="4.376020"/>
+<trkpt lat="50.682240" lon="4.375990"/>
+<trkpt lat="50.682240" lon="4.375970"/>
+<trkpt lat="50.682380" lon="4.375970"/>
+<trkpt lat="50.682440" lon="4.375990"/>
+<trkpt lat="50.682870" lon="4.376080"/>
+<trkpt lat="50.682880" lon="4.376080"/>
+<trkpt lat="50.682980" lon="4.376100"/>
+<trkpt lat="50.683040" lon="4.376120"/>
+<trkpt lat="50.683050" lon="4.376120"/>
+<trkpt lat="50.683100" lon="4.376130"/>
+<trkpt lat="50.683130" lon="4.376140"/>
+<trkpt lat="50.683810" lon="4.376470"/>
+<trkpt lat="50.683940" lon="4.376530"/>
+<trkpt lat="50.684020" lon="4.376560"/>
+<trkpt lat="50.684110" lon="4.376590"/>
+<trkpt lat="50.684180" lon="4.376610"/>
+<trkpt lat="50.684330" lon="4.376640"/>
+<trkpt lat="50.684370" lon="4.376650"/>
+<trkpt lat="50.684390" lon="4.376650"/>
 <trkpt lat="50.684534" lon="4.376609"/>
 <trkpt lat="50.684612" lon="4.376619"/>
 <trkpt lat="50.684674" lon="4.376629"/>
