@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Guidage lignes TEC" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net">
-<metadata><name>L36_06_Braine-L-Alleud-Gare_vers_Basse-Wavre-College_55arr</name><desc>Ligne 36 – BRAINE-L'ALLEUD Gare - Quai 9 (Av. Albert Ier) → BASSE-WAVRE Collège – 55 arrêts – 28.5 km – départs : 07:15</desc></metadata>
+<metadata><name>L36_06_Braine-L-Alleud-Gare_vers_Basse-Wavre-College_55arr</name><desc>Ligne 36 – BRAINE-L'ALLEUD Gare - Quai 9 (Av. Albert Ier) → BASSE-WAVRE Collège – 55 arrêts – 28.3 km – départs : 07:15</desc></metadata>
 <wpt lat="50.682511" lon="4.375931"><name>01 BRAINE-L'ALLEUD Gare - Quai 9 (Av. Albert Ier)</name><desc>Arrêt 1/55 – ligne 36</desc><type>Arrêts ligne 36</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
 <wpt lat="50.684977" lon="4.376735"><name>02 BRAINE-L'ALLEUD Ancienne Station</name><desc>Arrêt 2/55 – ligne 36</desc><type>Arrêts ligne 36</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
 <wpt lat="50.685569" lon="4.378183"><name>03 BRAINE-L'ALLEUD Vallée Bailly</name><desc>Arrêt 3/55 – ligne 36</desc><type>Arrêts ligne 36</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
@@ -56,7 +56,7 @@
 <wpt lat="50.716042" lon="4.619637"><name>53 WAVRE Delhaize</name><desc>Arrêt 53/55 – ligne 36</desc><type>Arrêts ligne 36</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
 <wpt lat="50.720316" lon="4.624560"><name>54 WAVRE Basse-Wavre</name><desc>Arrêt 54/55 – ligne 36</desc><type>Arrêts ligne 36</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
 <wpt lat="50.722732" lon="4.623359"><name>55 BASSE-WAVRE Collège</name><desc>Arrêt 55/55 – ligne 36</desc><type>Arrêts ligne 36</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
-<trk><name>L36_06_Braine-L-Alleud-Gare_vers_Basse-Wavre-College_55arr</name><desc>Ligne 36 – BRAINE-L'ALLEUD Gare - Quai 9 (Av. Albert Ier) → BASSE-WAVRE Collège – 55 arrêts – 28.5 km – départs : 07:15</desc><trkseg>
+<trk><name>L36_06_Braine-L-Alleud-Gare_vers_Basse-Wavre-College_55arr</name><desc>Ligne 36 – BRAINE-L'ALLEUD Gare - Quai 9 (Av. Albert Ier) → BASSE-WAVRE Collège – 55 arrêts – 28.3 km – départs : 07:15</desc><trkseg>
 <trkpt lat="50.682505" lon="4.376002"/>
 <trkpt lat="50.682373" lon="4.375978"/>
 <trkpt lat="50.682323" lon="4.375971"/>

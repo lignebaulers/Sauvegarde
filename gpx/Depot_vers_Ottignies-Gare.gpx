@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Guidage lignes TEC" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net">
-<metadata><name>Depot_vers_Ottignies-Gare</name><desc>Dépôt Baulers vers OTTIGNIES Gare – trajet « (11-19-20 ) Dépôt Baulers vers départ ligne 19-20-11- gare Ottignies » enregistré par un collègue (Wikiloc) : https://www.wikiloc.com/wikiloc/view.do?id=19671185</desc></metadata>
-<wpt lat="50.673025" lon="4.569771"><name>Arrivée : OTTIGNIES Gare</name><type>Dépôt</type><extensions><osmand:icon>special_flag_finish</osmand:icon><osmand:color>#0b6e65</osmand:color></extensions></wpt>
-<trk><name>Depot_vers_Ottignies-Gare</name><desc>Dépôt Baulers vers OTTIGNIES Gare – trajet « (11-19-20 ) Dépôt Baulers vers départ ligne 19-20-11- gare Ottignies » enregistré par un collègue (Wikiloc) : https://www.wikiloc.com/wikiloc/view.do?id=19671185</desc><extensions><osmand:color>#0b6e65</osmand:color></extensions><trkseg>
+<metadata><name>Depot_vers_Ottignies-Gare</name><desc>Dépôt Baulers vers OTTIGNIES Gare – trajet « (11-19-20 ) Dépôt Baulers vers départ ligne 19-20-11- gare Ottignies » enregistré par un collègue (Wikiloc) : https://www.wikiloc.com/wikiloc/view.do?id=19671185 – fin refaite le 05/11/2026 : la gare de bus est avenue des Droits de l'Homme (avis 7037) ; au rond-point de la N237, tout droit, puis le même chemin que les lignes 11, 33 et E1 jusqu'à l'arrêt (signalé par un chauffeur)</desc></metadata>
+<wpt lat="50.672146" lon="4.572195"><name>Arrivée : OTTIGNIES Gare - Av. Droits de l'Homme</name><type>Dépôt</type><extensions><osmand:icon>special_flag_finish</osmand:icon><osmand:color>#0b6e65</osmand:color></extensions></wpt>
+<trk><name>Depot_vers_Ottignies-Gare</name><desc>Dépôt Baulers vers OTTIGNIES Gare – trajet « (11-19-20 ) Dépôt Baulers vers départ ligne 19-20-11- gare Ottignies » enregistré par un collègue (Wikiloc) : https://www.wikiloc.com/wikiloc/view.do?id=19671185 – fin refaite le 05/11/2026 : la gare de bus est avenue des Droits de l'Homme (avis 7037) ; au rond-point de la N237, tout droit, puis le même chemin que les lignes 11, 33 et E1 jusqu'à l'arrêt (signalé par un chauffeur)</desc><extensions><osmand:color>#0b6e65</osmand:color></extensions><trkseg>
 <trkpt lat="50.611383" lon="4.336425"/>
 <trkpt lat="50.611282" lon="4.336541"/>
 <trkpt lat="50.611181" lon="4.336611"/>
@@ -1160,61 +1160,45 @@
 <trkpt lat="50.677394" lon="4.577849"/>
 <trkpt lat="50.677237" lon="4.577601"/>
 <trkpt lat="50.677181" lon="4.577449"/>
-<trkpt lat="50.677124" lon="4.577135"/>
-<trkpt lat="50.677088" lon="4.576883"/>
-<trkpt lat="50.677057" lon="4.576731"/>
-<trkpt lat="50.677028" lon="4.576592"/>
-<trkpt lat="50.677005" lon="4.576299"/>
-<trkpt lat="50.676979" lon="4.576083"/>
-<trkpt lat="50.676957" lon="4.575808"/>
-<trkpt lat="50.676956" lon="4.575433"/>
-<trkpt lat="50.676962" lon="4.575231"/>
-<trkpt lat="50.676981" lon="4.574844"/>
-<trkpt lat="50.676999" lon="4.574480"/>
-<trkpt lat="50.677014" lon="4.574273"/>
-<trkpt lat="50.677040" lon="4.573865"/>
-<trkpt lat="50.677049" lon="4.573659"/>
-<trkpt lat="50.677054" lon="4.573449"/>
-<trkpt lat="50.677063" lon="4.573075"/>
-<trkpt lat="50.677082" lon="4.572810"/>
-<trkpt lat="50.677082" lon="4.572664"/>
-<trkpt lat="50.677039" lon="4.572528"/>
-<trkpt lat="50.676952" lon="4.572411"/>
-<trkpt lat="50.676853" lon="4.572384"/>
-<trkpt lat="50.676718" lon="4.572339"/>
-<trkpt lat="50.676565" lon="4.572292"/>
-<trkpt lat="50.676397" lon="4.572230"/>
-<trkpt lat="50.676208" lon="4.572144"/>
-<trkpt lat="50.675991" lon="4.572025"/>
-<trkpt lat="50.675888" lon="4.571968"/>
-<trkpt lat="50.675772" lon="4.571914"/>
-<trkpt lat="50.675535" lon="4.571789"/>
-<trkpt lat="50.675425" lon="4.571727"/>
-<trkpt lat="50.675193" lon="4.571596"/>
-<trkpt lat="50.675079" lon="4.571532"/>
-<trkpt lat="50.674970" lon="4.571469"/>
-<trkpt lat="50.674859" lon="4.571406"/>
-<trkpt lat="50.674644" lon="4.571289"/>
-<trkpt lat="50.674528" lon="4.571233"/>
-<trkpt lat="50.674413" lon="4.571171"/>
-<trkpt lat="50.674179" lon="4.571067"/>
-<trkpt lat="50.674059" lon="4.571021"/>
-<trkpt lat="50.673942" lon="4.570963"/>
-<trkpt lat="50.673823" lon="4.570913"/>
-<trkpt lat="50.673595" lon="4.570779"/>
-<trkpt lat="50.673493" lon="4.570731"/>
-<trkpt lat="50.673376" lon="4.570682"/>
-<trkpt lat="50.673268" lon="4.570634"/>
-<trkpt lat="50.673168" lon="4.570586"/>
-<trkpt lat="50.672987" lon="4.570502"/>
-<trkpt lat="50.672849" lon="4.570393"/>
-<trkpt lat="50.672736" lon="4.570355"/>
-<trkpt lat="50.672619" lon="4.570345"/>
-<trkpt lat="50.672475" lon="4.570315"/>
-<trkpt lat="50.672497" lon="4.570152"/>
-<trkpt lat="50.672668" lon="4.570021"/>
-<trkpt lat="50.672795" lon="4.569936"/>
-<trkpt lat="50.672898" lon="4.569855"/>
-<trkpt lat="50.673025" lon="4.569771"/>
+<trkpt lat="50.677042" lon="4.577388"/>
+<trkpt lat="50.677055" lon="4.577324"/>
+<trkpt lat="50.677048" lon="4.577273"/>
+<trkpt lat="50.677036" lon="4.577218"/>
+<trkpt lat="50.677014" lon="4.577177"/>
+<trkpt lat="50.676979" lon="4.577147"/>
+<trkpt lat="50.676949" lon="4.577127"/>
+<trkpt lat="50.676897" lon="4.577110"/>
+<trkpt lat="50.676877" lon="4.577110"/>
+<trkpt lat="50.676836" lon="4.577121"/>
+<trkpt lat="50.676814" lon="4.577136"/>
+<trkpt lat="50.676752" lon="4.577125"/>
+<trkpt lat="50.676648" lon="4.577073"/>
+<trkpt lat="50.676590" lon="4.577033"/>
+<trkpt lat="50.676576" lon="4.577023"/>
+<trkpt lat="50.676530" lon="4.576989"/>
+<trkpt lat="50.676423" lon="4.576891"/>
+<trkpt lat="50.676179" lon="4.576690"/>
+<trkpt lat="50.675832" lon="4.576471"/>
+<trkpt lat="50.675689" lon="4.576383"/>
+<trkpt lat="50.675303" lon="4.576138"/>
+<trkpt lat="50.675010" lon="4.575928"/>
+<trkpt lat="50.674943" lon="4.575879"/>
+<trkpt lat="50.674870" lon="4.575826"/>
+<trkpt lat="50.674751" lon="4.575719"/>
+<trkpt lat="50.674680" lon="4.575657"/>
+<trkpt lat="50.674552" lon="4.575543"/>
+<trkpt lat="50.674552" lon="4.575482"/>
+<trkpt lat="50.674545" lon="4.575403"/>
+<trkpt lat="50.674516" lon="4.575329"/>
+<trkpt lat="50.674471" lon="4.575271"/>
+<trkpt lat="50.674429" lon="4.575252"/>
+<trkpt lat="50.674384" lon="4.575247"/>
+<trkpt lat="50.674342" lon="4.575252"/>
+<trkpt lat="50.674031" lon="4.574997"/>
+<trkpt lat="50.673892" lon="4.574797"/>
+<trkpt lat="50.673770" lon="4.574620"/>
+<trkpt lat="50.673184" lon="4.573759"/>
+<trkpt lat="50.672636" lon="4.572941"/>
+<trkpt lat="50.672146" lon="4.572195"/>
 </trkseg></trk>
 </gpx>

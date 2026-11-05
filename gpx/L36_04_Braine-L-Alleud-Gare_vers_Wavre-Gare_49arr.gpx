@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Guidage lignes TEC" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net">
-<metadata><name>L36_04_Braine-L-Alleud-Gare_vers_Wavre-Gare_49arr</name><desc>Ligne 36 – BRAINE-L'ALLEUD Gare - Quai 9 (Av. Albert Ier) → WAVRE Gare - Quai 5 – 49 arrêts – 26.1 km – départs : 12:15, 13:06, 15:36, 16:25, 16:50</desc></metadata>
+<metadata><name>L36_04_Braine-L-Alleud-Gare_vers_Wavre-Gare_49arr</name><desc>Ligne 36 – BRAINE-L'ALLEUD Gare - Quai 9 (Av. Albert Ier) → WAVRE Gare - Quai 5 – 49 arrêts – 26.0 km – départs : 12:15, 13:06, 15:36, 16:25, 16:50</desc></metadata>
 <wpt lat="50.682511" lon="4.375931"><name>01 BRAINE-L'ALLEUD Gare - Quai 9 (Av. Albert Ier)</name><desc>Arrêt 1/49 – ligne 36</desc><type>Arrêts ligne 36</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
 <wpt lat="50.684977" lon="4.376735"><name>02 BRAINE-L'ALLEUD Ancienne Station</name><desc>Arrêt 2/49 – ligne 36</desc><type>Arrêts ligne 36</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
 <wpt lat="50.685569" lon="4.378183"><name>03 BRAINE-L'ALLEUD Vallée Bailly</name><desc>Arrêt 3/49 – ligne 36</desc><type>Arrêts ligne 36</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
@@ -50,7 +50,7 @@
 <wpt lat="50.708820" lon="4.594978"><name>47 BIERGES Village</name><desc>Arrêt 47/49 – ligne 36</desc><type>Arrêts ligne 36</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
 <wpt lat="50.712767" lon="4.600178"><name>48 BIERGES Pont Autoroute</name><desc>Arrêt 48/49 – ligne 36</desc><type>Arrêts ligne 36</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
 <wpt lat="50.714831" lon="4.603956"><name>49 WAVRE Gare - Quai 5</name><desc>Arrêt 49/49 – ligne 36</desc><type>Arrêts ligne 36</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
-<trk><name>L36_04_Braine-L-Alleud-Gare_vers_Wavre-Gare_49arr</name><desc>Ligne 36 – BRAINE-L'ALLEUD Gare - Quai 9 (Av. Albert Ier) → WAVRE Gare - Quai 5 – 49 arrêts – 26.1 km – départs : 12:15, 13:06, 15:36, 16:25, 16:50</desc><trkseg>
+<trk><name>L36_04_Braine-L-Alleud-Gare_vers_Wavre-Gare_49arr</name><desc>Ligne 36 – BRAINE-L'ALLEUD Gare - Quai 9 (Av. Albert Ier) → WAVRE Gare - Quai 5 – 49 arrêts – 26.0 km – départs : 12:15, 13:06, 15:36, 16:25, 16:50</desc><trkseg>
 <trkpt lat="50.682505" lon="4.376002"/>
 <trkpt lat="50.682373" lon="4.375978"/>
 <trkpt lat="50.682323" lon="4.375971"/>

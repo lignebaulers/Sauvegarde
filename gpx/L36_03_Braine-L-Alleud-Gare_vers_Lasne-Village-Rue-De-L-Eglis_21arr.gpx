@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gpx version="1.1" creator="Guidage lignes TEC" xmlns="http://www.topografix.com/GPX/1/1" xmlns:osmand="https://osmand.net">
-<metadata><name>L36_03_Braine-L-Alleud-Gare_vers_Lasne-Village-Rue-De-L-Eglis_21arr</name><desc>Ligne 36 – BRAINE-L'ALLEUD Gare - Quai 9 (Av. Albert Ier) → LASNE Village (Rue de l'Eglise) – 21 arrêts – 12.4 km – départs : 20:36, 21:36</desc></metadata>
+<metadata><name>L36_03_Braine-L-Alleud-Gare_vers_Lasne-Village-Rue-De-L-Eglis_21arr</name><desc>Ligne 36 – BRAINE-L'ALLEUD Gare - Quai 9 (Av. Albert Ier) → LASNE Village (Rue de l'Eglise) – 21 arrêts – 12.2 km – départs : 20:36, 21:36</desc></metadata>
 <wpt lat="50.682511" lon="4.375931"><name>01 BRAINE-L'ALLEUD Gare - Quai 9 (Av. Albert Ier)</name><desc>Arrêt 1/21 – ligne 36</desc><type>Arrêts ligne 36</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
 <wpt lat="50.684977" lon="4.376735"><name>02 BRAINE-L'ALLEUD Ancienne Station</name><desc>Arrêt 2/21 – ligne 36</desc><type>Arrêts ligne 36</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
 <wpt lat="50.685569" lon="4.378183"><name>03 BRAINE-L'ALLEUD Vallée Bailly</name><desc>Arrêt 3/21 – ligne 36</desc><type>Arrêts ligne 36</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
@@ -22,7 +22,7 @@
 <wpt lat="50.675761" lon="4.473105"><name>19 COUTURE-SAINT-GERMAIN Couture</name><desc>Arrêt 19/21 – ligne 36</desc><type>Arrêts ligne 36</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
 <wpt lat="50.681004" lon="4.478599"><name>20 LASNE Petit Champ</name><desc>Arrêt 20/21 – ligne 36</desc><type>Arrêts ligne 36</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
 <wpt lat="50.686124" lon="4.484188"><name>21 LASNE Village (Rue de l'Eglise)</name><desc>Arrêt 21/21 – ligne 36</desc><type>Arrêts ligne 36</type><extensions><osmand:icon>highway_bus_stop</osmand:icon><osmand:background>circle</osmand:background><osmand:color>#e30613</osmand:color></extensions></wpt>
-<trk><name>L36_03_Braine-L-Alleud-Gare_vers_Lasne-Village-Rue-De-L-Eglis_21arr</name><desc>Ligne 36 – BRAINE-L'ALLEUD Gare - Quai 9 (Av. Albert Ier) → LASNE Village (Rue de l'Eglise) – 21 arrêts – 12.4 km – départs : 20:36, 21:36</desc><trkseg>
+<trk><name>L36_03_Braine-L-Alleud-Gare_vers_Lasne-Village-Rue-De-L-Eglis_21arr</name><desc>Ligne 36 – BRAINE-L'ALLEUD Gare - Quai 9 (Av. Albert Ier) → LASNE Village (Rue de l'Eglise) – 21 arrêts – 12.2 km – départs : 20:36, 21:36</desc><trkseg>
 <trkpt lat="50.682505" lon="4.376002"/>
 <trkpt lat="50.682373" lon="4.375978"/>
 <trkpt lat="50.682323" lon="4.375971"/>
