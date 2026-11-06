@@ -1,0 +1,16 @@
+Outils d'analyse GPS – Lignes Baulers (05/11/2026)
+Données : dossier Drive « GPS bus » (un fichier par heure, un zip par jour dès le 06/11).
+Colonnes : ts;vehicule;ligne;route;course;sens;depart;lat;lon;cap;vitesse;arret_n;etat;arret;type;vid
+- vitesse = valeur TEC × 3,6 ; arret_n = index 0-based de nos arrêts.
+- Le TEC clôt les courses toutes les 10 min selon l'horaire (bus en retard : disparaît avant le terminus) ; aucun bus sans course publié.
+Scripts (Python 3, lisent r73/index.html de l'appli) :
+- concord.py : variante de chaque course, distance à notre tracé, sens, déviations suivies.
+- clusters.py : positions hors tracé regroupées par endroit.
+- details.py : arrêts annoncés vs nos arrêts, contresens, respect des déviations.
+- gares.py : quai de départ réel vs notre quai, sortie de gare.
+- approche.py : bus déjà en course qui roulent à vide vers leur 1er arrêt (points d'attente, sorties de dépôt).
+- ecarts.py / ecarts2.py : cartes PNG.
+Relais : bus_tec_v31.gs (installé le 05/11 à 22h34), banc d'essai harness_v31.js + mkfeed31.py.
+
+Chemins : chaque script a en tête une variable S (dossier de travail) à adapter.
+Le relais bus_tec_v31.gs : remplacer ID_DU_DOSSIER_DRIVE par l'identifiant du dossier Drive ; la clé TEC reste dans cle_tec.txt (jamais dans le code).
