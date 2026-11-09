@@ -18,4 +18,4 @@ Si tu avais déjà un dossier TEC_Parcours dans OsmAnd, supprime-le d'abord.
 
 Outil non officiel, fait à partir des données ouvertes du TEC (GTFS) et des avis affichés au dépôt. Le papier au dépôt et la signalisation priment toujours.
 
-Version actuelle : sauvegarde du 06/11/2026 (v28, appli v28), 311 trajets.
+Version actuelle : sauvegarde du 10/11/2026 (v29, appli v28.1), 311 trajets + zones d'attente.
