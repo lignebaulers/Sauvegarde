@@ -18,4 +18,4 @@ Si tu avais déjà un dossier TEC_Parcours dans OsmAnd, supprime-le d'abord.
 
 Outil non officiel, fait à partir des données ouvertes du TEC (GTFS) et des avis affichés au dépôt. Le papier au dépôt et la signalisation priment toujours.
 
-Version actuelle : sauvegarde du 10/11/2026 (v30, appli v28.2), 346 trajets + zones d'attente ; dont 35 trajets à vide BÊTA (dossier HLP_beta, orange, à confirmer).
+Version actuelle : sauvegarde du 10/11/2026 (v30, appli v29), 346 trajets + zones d'attente ; dont 35 trajets à vide BÊTA (dossier HLP_beta, orange, à confirmer).
