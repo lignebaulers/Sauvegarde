@@ -10,6 +10,8 @@ Scripts (Python 3, lisent r73/index.html de l'appli) :
 - gares.py : quai de départ réel vs notre quai, sortie de gare.
 - approche.py : bus déjà en course qui roulent à vide vers leur 1er arrêt (points d'attente, sorties de dépôt).
 - ecarts.py / ecarts2.py : cartes PNG.
+- controle_ecarts.py (10/11) : contrôle quotidien, autonome. python3 controle_ecarts.py gps_AAAA-MM-JJ.zip index.html sortie/ historique.json
+  -> endroits où les bus des lignes 6x, 7x, W, E4, E7 roulent hors de nos tracés (≥ 2 courses = « répété »), rapport .md + cartes.
 Relais : bus_tec_v31.gs (installé le 05/11 à 22h34), banc d'essai harness_v31.js + mkfeed31.py.
 
 Chemins : chaque script a en tête une variable S (dossier de travail) à adapter.
